@@ -1,0 +1,25 @@
+body {
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#title {
+  margin-top: 200px;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.project {
+  /*border: black 1px dotted;*/
+}
+
