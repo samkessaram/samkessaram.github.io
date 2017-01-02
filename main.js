@@ -1,6 +1,7 @@
 $(function(){
 
   $('.project').click(function(){
+    $('#project-view').scrollTop(0)
     $('body').css('overflow','hidden');
     $('body').css('height',window.innerHeight * 10);
     $('#overlay').fadeIn('slow');
@@ -16,7 +17,6 @@ $(function(){
       $('#project-view').css('width','0px');
       $('body').css('height',window.innerHeight);
       $('body').css('overflow','visible');
-      $('#project-view').scrollTop(0)
     },300);
 
     
