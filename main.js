@@ -4,8 +4,8 @@ $(function(){
     $('body').css('overflow','hidden');
     $('body').css('height',window.innerHeight * 3.6);
     $('#overlay').fadeIn('slow');
-    $('#project-view').css('top', window.scrollY);
-    $('#project-view').css({left:'0%', width: window.innerWidth, 'overflow-y': 'auto'});
+    $('#project-view').css('margin-top', window.scrollY);
+    $('#project-view').css({left:'0%', top: '0px', width: window.innerWidth, height: window.innerHeight});
   })
 
   $('#project-view').click(function(){

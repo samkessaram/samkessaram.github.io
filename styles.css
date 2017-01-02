@@ -37,7 +37,9 @@ header {
   transition-property: left;
   transition-duration: 0.2s;
   color: white;
-  overflow-x: hidden;
+  overflow-y:auto;
+  right:0px;
+  bottom:0px
 }
 
 #project-info {
