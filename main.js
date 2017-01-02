@@ -2,7 +2,7 @@ $(function(){
 
   $('.project').click(function(){
     $('body').css('overflow','hidden');
-    $('body').css('height',window.innerHeight * 4);
+    $('body').css('height',window.innerHeight * 10);
     $('#overlay').fadeIn('slow');
     $('#project-view').css('margin-top', window.scrollY);
     $('#project-view').css({left:'0%', top: '0px', width: window.innerWidth, height: window.innerHeight});
