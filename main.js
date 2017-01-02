@@ -7,6 +7,10 @@ $(function(){
   $('#project-view').click(function(){
     hideProject();
   })
+
+  $(window).on('orientationchange resize', function(){
+    $('#project-view').css({width: window.innerWidth, height: window.innerHeight});
+  })
 });
 
 function showProject(){
@@ -32,6 +36,8 @@ function hideProject(){
 function inputProjectInfo(project){
   $('#screenshot').html($(project).children().clone())
 }
+
+
 
 // var projects = {
 //   weather: ,
