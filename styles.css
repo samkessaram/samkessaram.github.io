@@ -1,3 +1,8 @@
+/*body {
+  height: 3000px;
+}*/
+
+
 h1,
 h2,
 h3,
@@ -19,18 +24,28 @@ header {
   box-shadow: 1px 1px 5px lightgrey;
 }
 
+#home {
+  position: absolute;
+}
+
+#overlay {
+  position: absolute;
+  z-index: 1;
+}
+
 #project-view {
+  z-index: 10;
+  width: 0px;
   position: absolute;
   left: 100%;
   transition-property: left;
   transition-duration: 0.5s;
   color: white;
-  overflow: auto;
-  height: 100%;
+  overflow-x: hidden;
 }
 
-#project-view .row {
-  display: none;
+#project-info {
+  margin-top: 50px;
 }
 
 #overlay {

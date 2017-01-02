@@ -1,16 +1,23 @@
 $(function(){
+
   $('.project').click(function(){
-    $('#project-view').css('top',window.scrollY);
-    $('body').css('overflow-y','hidden');
+    $('body').css('overflow','hidden');
+    $('body').css('height','10000px');
     $('#overlay').fadeIn('slow');
-    $('#project-view').css('left','0%');
-    $('#project-view .row').fadeIn('slow');
+    $('#project-view').css('top', window.scrollY);
+    $('#project-view').css({left:'0%', width: window.innerWidth, 'overflow-y': 'auto'});
   })
 
   $('#project-view').click(function(){
-    $('#project-view .row').fadeOut('fast');
-    $(this).css('left','100%');
+    $('#project-view').css('left','100%');
     $('#overlay').fadeOut('slow');
-    $('body').css('overflow-y','visible');
+
+    window.setTimeout(function(){
+      $('#project-view').css('width','0px');
+      $('body').css('overflow','visible');
+      $('body').css('height',window.innerHeight);
+    },500);
+
+    
   })
 });
