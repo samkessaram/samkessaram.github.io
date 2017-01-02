@@ -38,6 +38,7 @@ header {
   transition-duration: 0.2s;
   color: white;
   overflow-y:auto;
+  overflow-x: hidden;
   right:0px;
   bottom:0px
 }
