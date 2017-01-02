@@ -16,7 +16,7 @@ $(function(){
       $('#project-view').css('width','0px');
       $('body').css('height',window.innerHeight);
       $('body').css('overflow','visible');
-    },200);
+    },300);
 
     
   })
