@@ -2,7 +2,7 @@ $(function(){
 
   $('.project').click(function(){
     $('body').css('overflow','hidden');
-    $('body').css('height','10000px');
+    $('body').css('height',window.innerHeight * 3.6);
     $('#overlay').fadeIn('slow');
     $('#project-view').css('top', window.scrollY);
     $('#project-view').css({left:'0%', width: window.innerWidth, 'overflow-y': 'auto'});
@@ -14,9 +14,9 @@ $(function(){
 
     window.setTimeout(function(){
       $('#project-view').css('width','0px');
-      $('body').css('overflow','visible');
       $('body').css('height',window.innerHeight);
-    },500);
+      $('body').css('overflow','visible');
+    },200);
 
     
   })
