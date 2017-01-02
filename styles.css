@@ -21,7 +21,6 @@ header {
 
 #project-view {
   position: absolute;
-  top: 0px;
   left: 100%;
   transition-property: left;
   transition-duration: 0.5s;
