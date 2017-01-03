@@ -10,7 +10,7 @@ $(function(){
 
   $(window).on('orientationchange resize', function(){
     if ($('#project-view').css('width') !== '0px'){
-      $('#project-view').css({height: document.documentElement.clientHeight, width: document.documentElement.clientWidth}); 
+      $('#project-view').css({top: window.scrollY, height: document.documentElement.clientHeight, width: document.documentElement.clientWidth}); 
     }
   })
 });
@@ -39,17 +39,46 @@ function hideProject(){
 
 function inputProjectInfo(project){
   $('#screenshot').html($(project).children().clone())
+  project = projects[project.id];
+  $('#project-title').html(project.title);
+  $('#project-description').html(project.description);
 }
 
 
 
-// var projects = {
-//   weather: ,
-//   walkthisway: , 
-//   ohsnap: , 
-//   wikipedia: , 
-//   quotes: , 
-//   todo: 
-// }
+var projects = {
+  weather: { 
+    title: 'Local Weather',
+    description: 'A fucking weather app duDOI'
+  },
+  walkthisway: { 
+    title: 'Walk This Way',
+    description: 'A fucken blurb eh?'
+  }, 
+  ohsnap: { 
+    title: 'Oh Snap!',
+    description: 'A fucken blurb eh?' 
+  }, 
+  wikipedia: { 
+    title: 'wikipedia Viewer',
+    description: 'A fucken blurb eh?'
+  }, 
+  quotes: { 
+    title: 'Random Quote Machine',
+    description: 'A fucken blurb eh?'
+  }, 
+  todo: { 
+    title: 'Chrome Todo Extension',
+    description: 'A fucken blurb eh?'
+  }
+}
 
-// { }
+
+
+
+
+
+
+
+
+
