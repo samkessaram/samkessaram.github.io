@@ -15,22 +15,24 @@ $(function(){
   })
 });
 
+var initialScrollY;
+
 function showProject(){
+  initialScrollY = window.scrollY;
   $('#project-view').scrollTop(0)
   $('body').css('overflow','hidden');
-  $('body').css('height',document.documentElement.clientHeight * 10);
+  $('#home').css('height',document.documentElement.clientHeight * 100);
   $('#overlay').fadeIn('slow');
-  $('#project-view').css('margin-top', window.scrollY);
-  $('#project-view').css({left:'0%', top: '0px', width: document.documentElement.clientWidth, height: document.documentElement.clientHeight});
+  $('#project-view').css({left:'0%', top: window.scrollY, width: document.documentElement.clientWidth, height: document.documentElement.clientHeight});
 }
 
 function hideProject(){
   $('#project-view').css('left','100%');
   $('#overlay').fadeOut('slow');
-
   window.setTimeout(function(){
     $('#project-view').css('width','0px');
-    $('body').css('height',document.documentElement.clientHeight);
+    $('#home').css('height', 'auto');
+    window.scrollTo(0, initialScrollY)
     $('body').css('overflow','visible');
   },300); 
 }
