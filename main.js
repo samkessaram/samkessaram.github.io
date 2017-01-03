@@ -9,17 +9,19 @@ $(function(){
   })
 
   $(window).on('orientationchange resize', function(){
-    $('#project-view').css({width: window.innerWidth, height: window.innerHeight});
+    if ($('#project-view').css('width') !== '0px'){
+      $('#project-view').css({height: document.documentElement.clientHeight, width: document.documentElement.clientWidth}); 
+    }
   })
 });
 
 function showProject(){
   $('#project-view').scrollTop(0)
   $('body').css('overflow','hidden');
-  $('body').css('height',window.innerHeight * 10);
+  $('body').css('height',document.documentElement.clientHeight * 10);
   $('#overlay').fadeIn('slow');
   $('#project-view').css('margin-top', window.scrollY);
-  $('#project-view').css({left:'0%', top: '0px', width: window.innerWidth, height: window.innerHeight});
+  $('#project-view').css({left:'0%', top: '0px', width: document.documentElement.clientWidth, height: document.documentElement.clientHeight});
 }
 
 function hideProject(){
@@ -28,7 +30,7 @@ function hideProject(){
 
   window.setTimeout(function(){
     $('#project-view').css('width','0px');
-    $('body').css('height',window.innerHeight);
+    $('body').css('height',document.documentElement.clientHeight);
     $('body').css('overflow','visible');
   },300); 
 }
