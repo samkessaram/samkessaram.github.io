@@ -15,26 +15,27 @@ h5 {
 }
 
 #name {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 
 #job-title {
   font-size: 2rem;
-  position: relative;
-  top: -20px;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
 }
 
 header {
-  padding-top: 80px;
-  padding-bottom: 40px;
-  color: black;
-  background-color: #CBC9CF;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: #00A388;
   margin-bottom: 40px;
-  height: 500px;
+  text-align: center;
+  height: 300px;
+  /*background: linear-gradient(to bottom right, #060E19, #0A182B);*/
+  /*box-shadow: 1px 1px 1px gray;*/
 }
 
 .project img {
@@ -42,7 +43,7 @@ header {
 }
 
 #home {
-  position: absolute;
+
 }
 
 #overlay {

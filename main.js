@@ -4,11 +4,14 @@ $(function(){
     showProject();
   })
 
+  // $('header').css('height', document.documentElement.clientHeight);
+
   $('#project-view').click(function(){
     hideProject();
   })
 
   $(window).on('orientationchange resize', function(){
+    // $('header').css('height', document.documentElement.clientHeight);
     if ($('#project-view').css('width') !== '0px'){
       $('#project-view').css({top: window.scrollY, height: document.documentElement.clientHeight, width: document.documentElement.clientWidth}); 
     }
@@ -37,9 +40,9 @@ function hideProject(){
   },300); 
 }
 
-function inputProjectInfo(project){
-  $('#screenshot').html($(project).children().clone())
-  project = projects[project.id];
+function inputProjectInfo(target){
+  project = projects[target.id];
+  $('#screenshot').html('<a target="_blank" href="' + project.link + '">' + $(target).html() + '</a>')
   $('#project-title').html(project.title);
   $('#project-description').html(project.description);
 }
@@ -49,27 +52,33 @@ function inputProjectInfo(project){
 var projects = {
   weather: { 
     title: 'Local Weather',
-    description: 'A fucking weather app duDOI'
+    description: 'A fucking weather app duDOI',
+    link: 'https://samkessaram.github.io/local_weather'
   },
   walkthisway: { 
     title: 'Walk This Way',
-    description: 'A fucken blurb eh?'
+    description: 'A fucken blurb eh?',
+    link: 'https://blooming-castle-2022.herokuapp.com'
   }, 
   ohsnap: { 
     title: 'Oh Snap!',
-    description: 'A fucken blurb eh?' 
+    description: 'A fucken blurb eh?',
+    link: 'https://oh-snap.herokuapp.com/'
   }, 
   wikipedia: { 
     title: 'wikipedia Viewer',
-    description: 'A fucken blurb eh?'
+    description: 'A fucken blurb eh?',
+    link: 'https://samkessaram.github.io/wikipedia_viewer'
   }, 
   quotes: { 
     title: 'Random Quote Machine',
-    description: 'A fucken blurb eh?'
+    description: 'A fucken blurb eh?',
+    link: 'https://samkessaram.github.io/random_quote_machine'
   }, 
   todo: { 
     title: 'Chrome Todo Extension',
-    description: 'A fucken blurb eh?'
+    description: 'A fucken blurb eh?',
+    link: 'https://samkessaram.github.io/chrome-todo'
   }
 }
 
