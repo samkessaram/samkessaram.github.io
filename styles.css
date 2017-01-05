@@ -3,7 +3,7 @@ html {
 }
 
 body {
-
+  display: none;
 }
 
 h1,
@@ -110,6 +110,7 @@ header {
     padding-top: 30px;
     display: none;
     transition-duration: 0.5s;
+    box-shadow: 0px 5px 5px -5px grey;
   }
 
   #nav li {
@@ -140,8 +141,7 @@ header {
     float: right;
     position: fixed;
     top: 23px;
-    right: 10px;
-    z-index: 10;
+    z-index: 1;
   }
 }
 
@@ -152,16 +152,17 @@ header {
 
   #nav {
     position: fixed;
+    z-index: 2;
     left: 0px;
     right: 0px;
-    top: 60px;
+    top: 52px;
     padding: 0px 0px 30px;
     background-color: #00A388;
   }
 
   #job-title {
     font-size: 1rem;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
   }
 
   #name.fix {
@@ -173,9 +174,10 @@ header {
 
   #job-title.collapse {
     position: fixed;
+    z-index: 1;
     left: 0px;
     right: 0px;
-    top: 26px;
+    top: 46px;
     opacity: 0;
   }
 

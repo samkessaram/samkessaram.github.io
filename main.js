@@ -1,6 +1,9 @@
 $(function(){
 
   fixHeader();
+  setHeaderElementPositions();
+  $('body').show();
+
 
   $('.project').click(function(){
     inputProjectInfo(this);
@@ -32,7 +35,7 @@ $(function(){
         $('#name, header').removeClass('fix');
       }
  
-      if ( window.scrollY >= 40 ){
+      if ( window.scrollY >= 20 ){
         $('#home').css('padding-top','150px');
         $('header, #job-title').addClass('collapse');
       } else {
@@ -51,13 +54,23 @@ $(function(){
       $('#project-view').css({top: window.scrollY, height: document.documentElement.clientHeight, width: document.documentElement.clientWidth}); 
     }
 
+    $('header').css('max-width',document.documentElement.clientWidth);
+
     if ( document.documentElement.clientWidth > 720 ){
       $('#nav').show();
     } else {
       $('#nav').hide();
     }
+
+    setHeaderElementPositions();
+
   })
 });
+
+function setHeaderElementPositions() {
+  $('header, h1').css('max-width',document.documentElement.clientWidth);
+  $('#menu').css('left', 0.85 * document.documentElement.clientWidth);
+}
 
 var initialScrollY;
 
@@ -69,7 +82,6 @@ function showProject(){
   $('#home').css('height',document.documentElement.clientHeight * 100);
   $('#overlay').fadeIn('slow');
   $('#project-view').css({left:'0%', top: window.scrollY, width: document.documentElement.clientWidth, height: document.documentElement.clientHeight});
-
 }
 
 function hideProject(){
