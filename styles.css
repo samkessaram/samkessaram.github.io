@@ -99,6 +99,7 @@ header {
   background: #000;
   opacity: .9;
   display: none;
+  z-index: 9;
 }
 
 @media (max-width: 720px){
