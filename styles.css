@@ -1,4 +1,4 @@
-body {
+body, #menu {
   display: none;
 }
 
@@ -16,10 +16,10 @@ h5 {
 
 header {
   color: white;
-  text-align: center;
   background-color: #15caac;
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
+  text-align: center;
 }
 
 p {
@@ -36,38 +36,34 @@ p {
   transition-property: opacity;
 }
 
-#menu {
-  display: none;
-}
-
 #name {
   font-size: 3rem;
 }
 
 #nav li {
   float: left;
-  margin-right: 30px;
-  list-style: none;
-  text-transform: uppercase;
   font-weight: 400;
+  list-style: none;
+  margin-right: 30px;
+  text-transform: uppercase;
 }
 
 #nav ul {
+  cursor: pointer;
+  float: right;
   margin-bottom: 0px;
   position: relative;
   top: -20px;
-  float: right;
-  cursor: pointer;
 }
 
 #overlay {
+  background: #000;
+  display: none;
   height: 100%;
-  width: 100%;
+  opacity: .9;
   position: fixed;
   top: 0px;
-  background: #000;
-  opacity: .9;
-  display: none;
+  width: 100%;
   z-index: 9;
 }
 
@@ -76,17 +72,17 @@ p {
 }
 
 #project-view {
-  z-index: 10;
-  width: 0px;
-  position: absolute;
-  left: 100%;
-  transition-property: left;
-  transition-duration: 0.2s;
-  color: white;
+  bottom:0;
+  color:#FFF;
+  left:100%;
+  overflow-x:hidden;
   overflow-y:auto;
-  overflow-x: hidden;
-  right:0px;
-  bottom:0px
+  position:absolute;
+  right:0;
+  transition-duration:.2s;
+  transition-property:left;
+  width:0;
+  z-index:10;
 }
 
 .project img {
@@ -94,101 +90,83 @@ p {
   cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
 @media (max-width: 720px){
-
   header {
-    padding: 0px;
+    padding:0;
   }
 
   header.fix {
-    padding-top: 40px;
+    padding-top:40px;
   }
 
   header.fix.collapse {
-    position: fixed;
-    width: 100%;
+    position:fixed;
+    width:100%;
   }
 
   #job-title {
-    font-size: 1rem;
-  }
-
-  #menu {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 300;
-    float: right;
-    position: fixed;
-    top: 10px;
-    z-index: 2;
-  }
-
-  #name {
-    font-size: 2rem;
-  }
-
-  #nav {
-    padding-top: 30px;
-    display: none;
-    transition-duration: 0.5s;
-    box-shadow: 0px 5px 5px -5px grey;
-  }
-
-  #nav li {
-    float: none;
-    padding: 5px 0px;
-    margin-right: 0px;
-  }
-
-  #nav li:hover {
-    background-color: rgba(0,0,0,0.35);
-  }
-
-
-  #nav ul {
-    margin-bottom: 1rem;
-    position: relative;
-    top: 20px;
-    float: none;
-    margin-right: 0px;
-    margin-left: 0px;
-    clear: both;
-  }
-
-  #nav {
-    position: fixed;
-    z-index: 2;
-    left: 0px;
-    right: 0px;
-    top: 40px;
-    padding: 0px 0px 30px;
-    background-color: #15caac;
-  }
-
-
-
-  #name.fix {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 1;
-    background-color: #15caac;
-    box-shadow: 0px 5px 5px -5px grey;
+    font-size:1rem;
   }
 
   #job-title.collapse {
-    display: none;
+    display:none;
   }
 
+  #menu {
+    display:block;
+    float:right;
+    font-weight:300;
+    position:fixed;
+    text-transform:uppercase;
+    top:10px;
+    z-index:2;
+  }
 
+  #name {
+    font-size:2rem;
+  }
+
+  #name.fix {
+    background-color:#15caac;
+    box-shadow:0 5px 5px -5px grey;
+    left:0;
+    position:fixed;
+    right:0;
+    top:0;
+    z-index:1;
+  }
+
+  #nav {
+    background-color:#15caac;
+    box-shadow:0 5px 5px -5px grey;
+    display:none;
+    left:0;
+    padding:0 0 30px;
+    position:fixed;
+    right:0;
+    top:40px;
+    transition-duration:.5s;
+    z-index:2;
+  }
+
+  #nav li {
+    float:none;
+    margin-right:0;
+    padding:5px 0;
+  }
+
+  #nav li:hover {
+    background-color:rgba(0,0,0,0.35);
+  }
+
+  #nav ul {
+    clear:both;
+    float:none;
+    margin-bottom:1rem;
+    margin-left:0;
+    margin-right:0;
+    position:relative;
+    top:20px;
+  }
 }
 
