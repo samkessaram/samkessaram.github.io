@@ -32,9 +32,6 @@ $(function(){
   $('#home').click(function(){
     if ( document.documentElement.clientWidth <= 720 ){
       $('#nav').hide();
-      $('html, body').animate({
-        scrollTop: offset - 80
-      },500);
     } 
   })
 
