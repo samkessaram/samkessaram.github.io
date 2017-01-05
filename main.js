@@ -41,8 +41,8 @@ $(function(){
         $('#name, header').removeClass('fix');
       }
       
-      if ( window.scrollY >= 45 ){
-        $('#home').css('padding-top','157px');
+      if ( window.scrollY >= 40 ){
+        $('#home').css('padding-top','110px');
         $('header, #job-title').addClass('collapse');
       } else {
         $('#home').css('padding-top','45px');

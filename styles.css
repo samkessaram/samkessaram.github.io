@@ -16,12 +16,10 @@ h5 {
 
 #name {
   font-size: 3rem;
-  padding-top: 5%;
 }
 
 #job-title {
   font-size: 2rem;
-  padding-bottom: 5%;
   transition-duration: 0.5s;
   transition-property: opacity;
 }
@@ -70,7 +68,6 @@ header {
 }
 
 #home {
-  padding-top: 40px;
 }
 
 #overlay {
@@ -142,7 +139,7 @@ header {
     font-weight: 300;
     float: right;
     position: fixed;
-    top: 23px;
+    top: 10px;
     z-index: 2;
   }
 }
@@ -157,7 +154,7 @@ header {
     z-index: 2;
     left: 0px;
     right: 0px;
-    top: 52px;
+    top: 40px;
     padding: 0px 0px 30px;
     background-color: #15caac;
   }
@@ -168,11 +165,12 @@ header {
 
   #name.fix {
     position: fixed;
-    top: -5px;
+    top: 0px;
     left: 0px;
     right: 0px;
     z-index: 1;
     background-color: #15caac;
+    box-shadow: 0px 5px 5px -5px grey;
   }
 
   #job-title.collapse {
@@ -180,7 +178,7 @@ header {
   }
 
   header.fix {
-    padding-top: 66px;
+    padding-top: 40px;
   }
 
   header.fix.collapse {
