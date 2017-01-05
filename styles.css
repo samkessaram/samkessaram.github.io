@@ -164,7 +164,6 @@ header {
 
   #job-title {
     font-size: 1rem;
-    transition-duration: 0.2s;
   }
 
   #name.fix {
@@ -177,12 +176,7 @@ header {
   }
 
   #job-title.collapse {
-    position: fixed;
-    z-index: 1;
-    left: 0px;
-    right: 0px;
-    top: 66px;
-    opacity: 0;
+    display: none;
   }
 
   header.fix {

@@ -40,7 +40,7 @@ $(function(){
       } else {
         $('#name, header').removeClass('fix');
       }
- 
+      
       if ( window.scrollY >= 45 ){
         $('#home').css('padding-top','157px');
         $('header, #job-title').addClass('collapse');
