@@ -17,10 +17,16 @@ $(function(){
   $('li').click(function(){
     var id = "#" + $(this).html();
     var offset = $(id).offset().top;
-    $('#nav').hide();
-    $('html, body').animate({
-      scrollTop: offset
-    },500);
+    if ( document.documentElement.clientWidth <= 400 ){
+      $('#nav').hide();
+      $('html, body').animate({
+        scrollTop: offset - 80
+      },500);
+    } else {
+      $('html, body').animate({
+        scrollTop: offset
+      },500);
+    }
   })
 
   $(window).on('scroll', function(){
