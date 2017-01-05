@@ -1,9 +1,9 @@
-html {
-  -webkit-text-size-adjust: none;
-}
-
 body {
   display: none;
+}
+
+html {
+  -webkit-text-size-adjust: none;
 }
 
 h1,
@@ -14,8 +14,20 @@ h5 {
   font-family: 'Oswald', sans-serif;
 }
 
-#name {
-  font-size: 3rem;
+header {
+  color: white;
+  text-align: center;
+  background-color: #15caac;
+  box-shadow: 1px 1px 10px gray;
+  padding: 50px 0px;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+#home {
+  padding-top: 45px;
 }
 
 #job-title {
@@ -24,8 +36,12 @@ h5 {
   transition-property: opacity;
 }
 
-p {
-  font-family: sans-serif;
+#menu {
+  display: none;
+}
+
+#name {
+  font-size: 3rem;
 }
 
 #nav li {
@@ -44,32 +60,13 @@ p {
   cursor: pointer;
 }
 
-#menu {
-  display: none;
-}
-
-
-
-header {
-  color: white;
-  text-align: center;
-  background-color: #15caac;
-  box-shadow: 1px 1px 10px gray;
-  padding: 50px 0px;
-}
-
-.project img {
-  box-shadow: 1px 1px 5px lightgrey;
-  cursor: pointer;
-}
-
-#home {
-  padding-top: 45px;
-}
-
 #overlay {
   position: absolute;
   z-index: 1;
+}
+
+#project-info {
+  margin-top: 50px;
 }
 
 #project-view {
@@ -86,16 +83,35 @@ header {
   bottom:0px
 }
 
-#project-info {
-  margin-top: 50px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+.project img {
+  box-shadow: 1px 1px 5px lightgrey;
+  cursor: pointer;
 }
+
+
+
+
+
+
 
 #overlay {
   height: 101%;
   width: 100%;
   position: fixed;
   top: 0px;
-  bottom: -1px;
   background: #000;
   opacity: .9;
   display: none;
@@ -106,6 +122,15 @@ header {
 
   header {
     padding: 0px;
+  }
+
+  header.fix {
+    padding-top: 40px;
+  }
+
+  header.fix.collapse {
+    position: fixed;
+    width: 100%;
   }
 
   #nav {
@@ -178,13 +203,6 @@ header {
     display: none;
   }
 
-  header.fix {
-    padding-top: 40px;
-  }
 
-  header.fix.collapse {
-    position: fixed;
-    width: 100%;
-  }
 }
 
