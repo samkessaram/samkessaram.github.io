@@ -17,7 +17,7 @@ $(function(){
   $('li').click(function(){
     var id = "#" + $(this).html();
     var offset = $(id).offset().top;
-    if ( document.documentElement.clientWidth <= 400 ){
+    if ( document.documentElement.clientWidth <= 720 ){
       $('#nav').hide();
       $('html, body').animate({
         scrollTop: offset - 80
