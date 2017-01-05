@@ -42,10 +42,10 @@ $(function(){
       }
  
       if ( window.scrollY >= 45 ){
-        $('#home').css('padding-top','150px');
+        $('#home').css('padding-top','155px');
         $('header, #job-title').addClass('collapse');
       } else {
-        $('#home').css('padding-top','40px');
+        $('#home').css('padding-top','45px');
         $('header, #job-title').removeClass('collapse');
       }
     }
