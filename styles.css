@@ -61,8 +61,14 @@ p {
 }
 
 #overlay {
-  position: absolute;
-  z-index: 1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background: #000;
+  opacity: .9;
+  display: none;
+  z-index: 9;
 }
 
 #project-info {
@@ -83,19 +89,6 @@ p {
   bottom:0px
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .project img {
   box-shadow: 1px 1px 5px lightgrey;
   cursor: pointer;
@@ -107,16 +100,7 @@ p {
 
 
 
-#overlay {
-  height: 101%;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  background: #000;
-  opacity: .9;
-  display: none;
-  z-index: 9;
-}
+
 
 @media (max-width: 720px){
 
@@ -131,6 +115,24 @@ p {
   header.fix.collapse {
     position: fixed;
     width: 100%;
+  }
+
+  #job-title {
+    font-size: 1rem;
+  }
+
+  #menu {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 300;
+    float: right;
+    position: fixed;
+    top: 10px;
+    z-index: 2;
+  }
+
+  #name {
+    font-size: 2rem;
   }
 
   #nav {
@@ -161,20 +163,6 @@ p {
     clear: both;
   }
 
-  #menu {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 300;
-    float: right;
-    position: fixed;
-    top: 10px;
-    z-index: 2;
-  }
-
-  #name {
-    font-size: 2rem;
-  }
-
   #nav {
     position: fixed;
     z-index: 2;
@@ -185,9 +173,7 @@ p {
     background-color: #15caac;
   }
 
-  #job-title {
-    font-size: 1rem;
-  }
+
 
   #name.fix {
     position: fixed;
