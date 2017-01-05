@@ -34,7 +34,7 @@ $(function(){
   })
 
   function fixHeader(){
-    if ( document.documentElement.clientWidth <= 400 ){
+    if ( document.documentElement.clientWidth <= 720 ){
       if ( window.scrollY > 0 ){
         $('#name, header').addClass('fix');
       } else {
