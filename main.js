@@ -42,7 +42,7 @@ $(function(){
       }
  
       if ( window.scrollY >= 45 ){
-        $('#home').css('padding-top','155px');
+        $('#home').css('padding-top','157px');
         $('header, #job-title').addClass('collapse');
       } else {
         $('#home').css('padding-top','45px');
