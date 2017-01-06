@@ -44,8 +44,6 @@ $(function(){
       //   $('#home').css('padding-top','45px');
       //   $('header, #job-title').removeClass('collapse');
       // }
-    } else {
-
     }
   }
 
