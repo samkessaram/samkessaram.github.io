@@ -18,7 +18,7 @@ $(function(){
       },500);
     } else {
       $('html, body').animate({
-        scrollTop: offset
+        scrollTop: offset - 10
       },500);
     }
   })

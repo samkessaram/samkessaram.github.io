@@ -85,6 +85,11 @@ p {
   z-index:10;
 }
 
+.project {
+  margin: 0;
+  padding: 0;
+}
+
 .project img {
   box-shadow: 1px 1px 5px lightgrey;
   cursor: pointer;
