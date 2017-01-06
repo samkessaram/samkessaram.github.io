@@ -1,24 +1,18 @@
 $(function(){
 
   fixHeader();
-  setElementWidths();
+  setElementDimensions();
   $('body').show();
-
 
   $('.project').click(function(){
     inputProjectInfo(this);
     showProject();
   })
 
-  $('#menu').click(function(){
-    $('#nav').toggle();
-  })
-
   $('li').click(function(){
     var id = "#" + $(this).html();
     var offset = $(id).offset().top;
     if ( document.documentElement.clientWidth <= 720 ){
-      $('#nav').hide();
       $('html, body').animate({
         scrollTop: offset - 80
       },500);
@@ -29,31 +23,29 @@ $(function(){
     }
   })
 
-  $('#home').click(function(){
-    if ( document.documentElement.clientWidth <= 720 ){
-      $('#nav').hide();
-    } 
-  })
-
   $(window).on('scroll', function(){
     fixHeader();
   })
 
   function fixHeader(){
     if ( document.documentElement.clientWidth <= 720 ){
-      if ( window.scrollY > 0 ){
-        $('#name, header').addClass('fix');
+      if ( window.scrollY > 31 ){
+        $('header').addClass('fix');
+        $('#home').addClass('pad');
       } else {
-        $('#name, header').removeClass('fix');
+        $('header').removeClass('fix');
+        $('#home').removeClass('pad');
       }
       
-      if ( window.scrollY >= 40 ){
-        $('#home').css('padding-top','110px');
-        $('header, #job-title').addClass('collapse');
-      } else {
-        $('#home').css('padding-top','45px');
-        $('header, #job-title').removeClass('collapse');
-      }
+      // if ( window.scrollY >= 40 ){
+      //   $('#home').css('padding-top','110px');
+      //   $('header, #job-title').addClass('collapse');
+      // } else {
+      //   $('#home').css('padding-top','45px');
+      //   $('header, #job-title').removeClass('collapse');
+      // }
+    } else {
+
     }
   }
 
@@ -68,32 +60,25 @@ $(function(){
 
     $('header').css('max-width',document.documentElement.clientWidth);
 
-    if ( document.documentElement.clientWidth > 720 ){
-      $('#nav').show();
-    } else {
-      $('#nav').hide();
-    }
-
-    setElementWidths();
-
+    setElementDimensions();
   })
 });
 
-function setElementWidths() {
+function setElementDimensions() {
   $('header, h1').css('max-width',document.documentElement.clientWidth);
-  $('#menu').css('left', 0.85 * document.documentElement.clientWidth);
+  if ( document.documentElement.clientWidth <= 720 ){
+    $('#nav').css({ bottom: -(document.documentElement.clientHeight), top: document.documentElement.clientHeight - 50})
+  } else {
+    $('#nav').css({ bottom: 'auto', top: '-30px'})
+  }
 }
 
 var initialScrollY;
 
 function showProject(){
-  if ( document.documentElement.clientWidth <= 400 ){
-    $('#nav').hide();
-  }
   $('body').css('overflow','hidden');
   initialScrollY = window.scrollY;
   $('#project-view').scrollTop(0)
-  $('body').css('overflow','hidden');
   $('#home').css('height',document.documentElement.clientHeight * 100);
   $('#overlay').fadeIn('slow');
   $('#project-view').css({left:'0%', top: window.scrollY, width: document.documentElement.clientWidth, height: document.documentElement.clientHeight});
@@ -136,7 +121,7 @@ var projects = {
     link: 'https://oh-snap.herokuapp.com/'
   }, 
   wikipedia: { 
-    title: 'wikipedia Viewer',
+    title: 'Wikipedia Viewer',
     description: 'A fucken blurb eh?',
     link: 'https://samkessaram.github.io/wikipedia_viewer'
   }, 

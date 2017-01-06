@@ -1,4 +1,4 @@
-body, #menu {
+body {
   display: none;
 }
 
@@ -20,6 +20,7 @@ header {
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
   text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -40,20 +41,19 @@ p {
   font-size: 3rem;
 }
 
+#nav {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  top: -30px;
+}
+
 #nav li {
   float: left;
   font-weight: 400;
   list-style: none;
   margin-right: 30px;
   text-transform: uppercase;
-}
-
-#nav ul {
-  cursor: pointer;
-  float: right;
-  margin-bottom: 0px;
-  position: relative;
-  top: -20px;
 }
 
 #overlay {
@@ -93,80 +93,48 @@ p {
 @media (max-width: 720px){
   header {
     padding:0;
-  }
-
-  header.fix {
-    padding-top:40px;
-  }
-
-  header.fix.collapse {
-    position:fixed;
     width:100%;
   }
 
   #job-title {
     font-size:1rem;
+    margin-top: 44px;
   }
 
-  #job-title.collapse {
-    display:none;
+  header.fix {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: -30px;
   }
 
-  #menu {
-    display:block;
-    float:right;
-    font-weight:300;
-    position:fixed;
-    text-transform:uppercase;
-    top:10px;
-    z-index:2;
+  #home.pad {
+    padding-top: 120px;
   }
 
   #name {
     font-size:2rem;
-  }
-
-  #name.fix {
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    top: 0px;
     background-color:#15caac;
-    box-shadow:0 5px 5px -5px grey;
-    left:0;
-    position:fixed;
-    right:0;
-    top:0;
-    z-index:1;
   }
 
   #nav {
-    background-color:#15caac;
-    box-shadow:0 5px 5px -5px grey;
-    display:none;
-    left:0;
-    padding:0 0 30px;
-    position:fixed;
-    right:0;
-    top:40px;
-    transition-duration:.5s;
-    z-index:2;
+    background-color: #15caac;
+    box-shadow: 0 5px 5px -5px grey;
+    float: left;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 2;
   }
 
-  #nav li {
-    float:none;
-    margin-right:0;
-    padding:5px 0;
-  }
+  ul {
 
-  #nav li:hover {
-    background-color:rgba(0,0,0,0.35);
-  }
-
-  #nav ul {
-    clear:both;
-    float:none;
-    margin-bottom:1rem;
-    margin-left:0;
-    margin-right:0;
-    position:relative;
-    top:20px;
   }
 }
 
