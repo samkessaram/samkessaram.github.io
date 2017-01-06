@@ -134,6 +134,7 @@ p {
 
   #nav {
     background-color: #15caac;
+    bottom: 0px;
     float: left;
     left: 0;
     position: fixed;
