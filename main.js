@@ -91,7 +91,7 @@ function hideProject(){
     $('#project-view').css('width','0px');
     $('#home').css('height', 'auto');
     window.scrollTo(0, initialScrollY);
-    $('body').css('overflow','visible');
+    $('body').css('overflow','auto');
   },300); 
 }
 
