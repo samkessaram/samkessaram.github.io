@@ -14,7 +14,7 @@ $(function(){
     var offset = $(id).offset().top;
     if ( document.documentElement.clientWidth <= 720 ){
       $('html, body').animate({
-        scrollTop: offset - 80
+        scrollTop: offset - 60
       },500);
     } else {
       $('html, body').animate({
@@ -80,13 +80,13 @@ function showProject(){
   initialScrollY = window.scrollY;
   $('#project-view').scrollTop(0)
   $('#home').css('height',document.documentElement.clientHeight * 100);
-  $('#overlay').fadeIn('slow');
+  $('#overlay').fadeIn();
   $('#project-view').css({left:'0%', top: window.scrollY, width: document.documentElement.clientWidth, height: document.documentElement.clientHeight});
 }
 
 function hideProject(){
   $('#project-view').css('left','100%');
-  $('#overlay').fadeOut('slow');
+  $('#overlay').fadeOut();
   window.setTimeout(function(){
     $('#project-view').css('width','0px');
     $('#home').css('height', 'auto');

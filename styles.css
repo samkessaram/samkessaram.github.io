@@ -91,6 +91,10 @@ p {
 }
 
 @media (max-width: 720px){
+  #contact {
+    margin-bottom: 100px;
+  }
+
   header {
     padding:0;
     width:100%;
@@ -125,16 +129,35 @@ p {
 
   #nav {
     background-color: #15caac;
-    box-shadow: 0 5px 5px -5px grey;
     float: left;
     left: 0;
     position: fixed;
     right: 0;
     z-index: 2;
+    float:left;
+    width:100%;
+    overflow:hidden;
   }
 
-  ul {
+  #nav ul {
+    clear:left;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+    position:relative;
+    left:50%;
+    text-align:center;
+  }
 
+  #nav li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 11px 25px;
+    padding: 0;
+    position: relative;
+    right: 50%;
   }
 }
 
