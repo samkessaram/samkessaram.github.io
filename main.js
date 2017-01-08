@@ -1,8 +1,8 @@
 $(function(){
 
   fixHeader();
-  setElementDimensions();
   $('body').show();
+  setElementDimensions();
 
   $('.project').click(function(){
     inputProjectInfo(this);
