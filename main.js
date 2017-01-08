@@ -67,7 +67,7 @@ function setElementDimensions() {
   if ( document.documentElement.clientWidth <= 720 ){
     $('#nav').css({ top: document.documentElement.clientHeight - 50})
   } else {
-    $('#nav').css({ bottom: 'auto', top: '-30px'})
+    $('#nav').css({ top: '-30px'})
   }
 }
 
