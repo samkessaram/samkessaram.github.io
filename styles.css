@@ -1,11 +1,8 @@
 html {
-    /*overflow: hidden;*/
     -webkit-text-size-adjust: none;
-    /*height: 100%;*/
 }
 
 body {
-    /*height: 100%;*/
     display: none;
     overflow: auto;
 }

@@ -25,6 +25,13 @@ $(function(){
 
   $(window).on('scroll', function(){
     fixHeader();
+
+    if ( window.scrollY + document.documentElement.clientHeight >= $('body').height() - 1){
+      $('html').css({overflow: 'hidden', height: '100%'});
+      window.scrollTo(0, window.scrollY - 1)
+    } else {
+      $('html').css({overflow: 'auto', height: 'auto'})
+    }
   })
 
   function fixHeader(){
