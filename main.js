@@ -26,6 +26,7 @@ $(function(){
 
   $(window).on('scroll', function(){
     fixHeader();
+    setElementDimensions();
   })
 
   function fixHeader(){
