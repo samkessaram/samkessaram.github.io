@@ -63,6 +63,7 @@ function setElementDimensions() {
     $('#job-title').css('margin-top',$('#name').css('height'))
   } else {
     $('#nav').css({ top: '-30px', "margin-top":"0px"})
+    $('#job-title').css('margin-top', '0px')
   }
 }
 
