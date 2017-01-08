@@ -12,6 +12,7 @@ $(function(){
   $('li').click(function(){
     var id = "#" + $(this).html();
     var offset = $(id).offset().top;
+    console.log(offset);
     if ( document.documentElement.clientWidth <= 720 ){
       $('html, body').animate({
         scrollTop: offset - 60
@@ -25,13 +26,6 @@ $(function(){
 
   $(window).on('scroll', function(){
     fixHeader();
-
-    if ( window.scrollY + document.documentElement.clientHeight >= $('body').height() - 1){
-      $('html').css({overflow: 'hidden', height: '100%'});
-      window.scrollTo(0, window.scrollY - 1)
-    } else {
-      $('html').css({overflow: 'auto', height: 'auto'})
-    }
   })
 
   function fixHeader(){
