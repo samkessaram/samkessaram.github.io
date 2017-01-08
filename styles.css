@@ -80,6 +80,7 @@ p {
 }
 
 #project-view {
+  display: none;
   bottom:0;
   color:#FFF;
   left:100%;

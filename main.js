@@ -26,7 +26,7 @@ $(function(){
 
   $(window).on('scroll', function(){
     fixHeader();
-    $('#name').html($('html').height())
+    $('#name').html(document.documentElement.clientHeight + '+' + window.innerHeight)
   })
 
   function fixHeader(){
@@ -38,14 +38,6 @@ $(function(){
         $('header').removeClass('fix');
         $('#home').removeClass('pad');
       }
-      
-      // if ( window.scrollY >= 40 ){
-      //   $('#home').css('padding-top','110px');
-      //   $('header, #job-title').addClass('collapse');
-      // } else {
-      //   $('#home').css('padding-top','45px');
-      //   $('header, #job-title').removeClass('collapse');
-      // }
     }
   }
 
@@ -92,10 +84,12 @@ function hideProject(){
     $('#home').css('height', 'auto');
     window.scrollTo(0, initialScrollY);
     $('body').css('overflow','auto');
+    $('#project-view').css('display','none');
   },300); 
 }
 
 function inputProjectInfo(target){
+  $('#project-view').css('display','block');
   project = projects[target.id];
   $('#screenshot').html($(target).html())
   $('#project-title').html(project.title);
