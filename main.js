@@ -66,9 +66,9 @@ $(function(){
 function setElementDimensions() {
   $('header, h1, #nav').css('max-width',document.documentElement.clientWidth);
   if ( document.documentElement.clientWidth <= 720 ){
-    $('#nav').css({ top: document.documentElement.clientHeight - 50})
+    $('#nav').css({ top: document.documentElement.clientHeight, "margin-top":"-50px"})
   } else {
-    $('#nav').css({ top: '-30px'})
+    $('#nav').css({ top: '-30px', "margin-top":"0px"})
   }
 }
 
