@@ -9,10 +9,15 @@ $(function(){
     showProject();
   })
 
+  $('#name').click(function(){
+    $('html, body').animate({
+        scrollTop: 0
+      },500);
+  })
+
   $('li').click(function(){
     var id = "#" + $(this).html();
     var offset = $(id).offset().top;
-    console.log(offset);
     if ( document.documentElement.clientWidth <= 720 ){
       $('html, body').animate({
         scrollTop: offset - 60
