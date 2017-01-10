@@ -15,7 +15,7 @@ $(function(){
       },500);
   })
 
-  $('li').click(function(){
+  $('#about, #portfolio, #contact').click(function(){
     var id = "#" + $(this).html();
     var offset = $(id).offset().top;
     if ( document.documentElement.clientWidth <= 720 ){
@@ -54,9 +54,7 @@ $(function(){
     if ($('#project-view').css('width') !== '0px'){
       $('#project-view').css({top: window.scrollY, height: document.documentElement.clientHeight, width: document.documentElement.clientWidth}); 
     }
-
     $('header').css('max-width',document.documentElement.clientWidth);
-
     setElementDimensions();
   })
 });

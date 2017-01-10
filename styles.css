@@ -35,6 +35,10 @@ p {
   font-family: sans-serif;
 }
 
+#contact {
+  margin-bottom: 20px;
+}
+
 #home {
   padding-top: 45px;
 }
@@ -75,6 +79,10 @@ p {
   z-index: 9;
 }
 
+#portfolio .row {
+  padding: 0 1rem;
+}
+
 #project-info {
   margin-top: 50px;
 }
@@ -97,6 +105,11 @@ p {
 .project {
   margin: 0;
   padding: 0;
+  /*filter: grayscale(100%);*/
+}
+
+.project:hover {
+  filter: none;
 }
 
 .project img {
