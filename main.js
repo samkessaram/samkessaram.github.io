@@ -37,10 +37,10 @@ $(function(){
   function fixHeader(){
     if ( document.documentElement.clientWidth <= 720 ){
       if ( window.scrollY > 31 ){
-        $('header').addClass('fix');
+        $('header, #job-title, #name').addClass('fix');
         $('#home').addClass('pad');
       } else {
-        $('header').removeClass('fix');
+        $('header, #job-title, #name').removeClass('fix');
         $('#home').removeClass('pad');
       }
     }

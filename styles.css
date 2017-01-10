@@ -131,11 +131,15 @@ p {
     font-size:1rem;
   }
 
+  #job-title.fix {
+    display: none;
+  }
+
   header.fix {
     position: fixed;
     left: 0px;
     right: 0px;
-    top: -30px;
+    height: 30px
   }
 
   #home.pad {
@@ -151,6 +155,10 @@ p {
     right: 0px;
     top: 0px;
     background-color:#15caac;
+  }
+
+  #name.fix {
+    box-shadow: 1px 1px 10px grey;
   }
 
   #nav {
