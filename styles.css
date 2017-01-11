@@ -45,8 +45,6 @@ p {
 
 #job-title {
   font-size: 2rem;
-  transition-duration: 0.5s;
-  transition-property: opacity;
 }
 
 #name {
@@ -80,7 +78,7 @@ p {
 }
 
 #portfolio .row {
-  padding: 0 1rem;
+  padding: .75rem;
 }
 
 #project-info {

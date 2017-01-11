@@ -63,10 +63,10 @@ function setElementDimensions() {
   $('header, h1, #nav').css('max-width',document.documentElement.clientWidth);
   if ( document.documentElement.clientWidth <= 720 ){
     $('#nav').css({ top: window.innerHeight, "margin-top":"-50px"})
-    $('#job-title').css('margin-top',$('#name').css('height'))
+    $('#job-title').css('padding-top',$('#name').css('height'))
   } else {
     $('#nav').css({ top: '-30px', "margin-top":"0px"})
-    $('#job-title').css('margin-top', '0px')
+    $('#job-title').css('padding-top', '0px')
   }
 }
 
