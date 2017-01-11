@@ -62,11 +62,14 @@ $(function(){
 function setElementDimensions() {
   $('header, h1, #nav').css('max-width',document.documentElement.clientWidth);
   if ( document.documentElement.clientWidth <= 720 ){
-    $('#nav').css({ top: window.innerHeight, "margin-top":"-50px"})
-    $('#job-title').css('padding-top',$('#name').css('height'))
+    $('#nav').css({ top: window.innerHeight, "margin-top":"-50px"});
+    var padding = Number($('#name').css('height').split('px')[0]) + 50;
+    $('#job-title').css('padding-top', padding);
+    $('#job-title').css('margin-top', '-50px');
   } else {
     $('#nav').css({ top: '-30px', "margin-top":"0px"})
     $('#job-title').css('padding-top', '0px')
+    $('#job-title').css('margin-top', '0px');
   }
 }
 
