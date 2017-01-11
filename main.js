@@ -32,6 +32,14 @@ $(function(){
   $(window).on('scroll', function(){
     fixHeader();
     setElementDimensions();
+
+    if (window.scrollY === 0){
+      $('#job-title').addClass('no-scroll')
+      $('header').css('margin-bottom',$('#name').css('height'))
+    } else {
+      $('#job-title').removeClass('no-scroll')
+      $('header').css('margin-bottom','auto')
+    }
   })
 
   function fixHeader(){
@@ -61,12 +69,10 @@ function setElementDimensions() {
   $('header, h1, #nav').css('max-width',document.documentElement.clientWidth);
   if ( document.documentElement.clientWidth <= 720 ){
     $('#nav').css({ top: window.innerHeight, "margin-top":"-50px"});
-    $('#job-title').css('padding-top', Number($('#name').css('height').split('px')[0]) + 200);
-    $('#job-title').css('margin-top', '-200px')
+    $('#job-title').css('padding-top', $('#name').css('height'));
   } else {
     $('#nav').css({ top: '-30px', "margin-top":"0px"})
     $('#job-title').css('padding-top', '0px')
-    $('#job-title').css('margin-top', '0px')
   }
 }
 
