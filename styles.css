@@ -40,7 +40,7 @@ p {
 }
 
 #home {
-  padding-top: 45px;
+  padding-top: 20px;
 }
 
 #job-title {
@@ -133,15 +133,6 @@ p {
     display: none;
   }
 
-  #job-title.no-scroll {
-    width: 100%;
-    background-color: #15caac;
-    position: fixed;
-    left: 0px;
-    box-shadow: 1px 1px 10px grey;
-    right: 0px;
-  }
-
   header.fix {
     position: fixed;
     left: 0px;
@@ -150,7 +141,7 @@ p {
   }
 
   #home.fix {
-    padding-top: 120px;
+    padding-top: 95px;
   }
 
   #name {

@@ -15,12 +15,12 @@ $(function(){
       },500);
   })
 
-  $('#about, #portfolio, #contact').click(function(){
+  $('li').click(function(){
     var id = "#" + $(this).html();
     var offset = $(id).offset().top;
     if ( document.documentElement.clientWidth <= 720 ){
       $('html, body').animate({
-        scrollTop: offset - 60
+        scrollTop: offset - 44
       },500);
     } else {
       $('html, body').animate({
@@ -32,14 +32,6 @@ $(function(){
   $(window).on('scroll', function(){
     fixHeader();
     setElementDimensions();
-
-    if (window.scrollY === 0){
-      $('#job-title').addClass('no-scroll')
-      $('header').css('margin-bottom',$('#name').css('height'))
-    } else {
-      $('#job-title').removeClass('no-scroll')
-      $('header').css('margin-bottom','auto')
-    }
   })
 
   function fixHeader(){
