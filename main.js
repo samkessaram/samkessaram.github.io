@@ -15,12 +15,20 @@ $(function(){
       },500);
   })
 
-  $('li').click(function(){
-    var id = "#" + $(this).html();
+  $('.project').mouseenter(function(){
+    $('.project').not(this).addClass('filter')
+  })
+
+  $('.project').mouseleave(function(){
+    $('.project').removeClass('filter')
+  })
+
+  $('#nav li').click(function(){
+    var id = "#" + $(this).html().toLowerCase();
     var offset = $(id).offset().top;
     if ( document.documentElement.clientWidth <= 720 ){
       $('html, body').animate({
-        scrollTop: offset - 44
+        scrollTop: offset - 50
       },500);
     } else {
       $('html, body').animate({
@@ -131,6 +139,11 @@ var projects = {
     title: 'Chrome Todo Extension',
     description: 'A fucken blurb eh?',
     link: 'https://samkessaram.github.io/chrome-todo'
+  },
+  fiduciary: { 
+    title: 'Fiduciary Realty',
+    description: 'A fucken blurb eh?',
+    link: 'https://fiduciaryrealty.com'
   }
 }
 

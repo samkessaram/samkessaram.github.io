@@ -1,25 +1,23 @@
-a {
+header a {
   color: white;
 }
 
 html {
-    /*overflow: hidden;*/
     -webkit-text-size-adjust: none;
-    /*height: 100%;*/
 }
 
 body {
-    /*height: 100%;*/
     display: none;
-    /*overflow: auto;*/
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Futura', sans-serif;
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+body {
+  font-family: 'Futura', 'Helvetica', sans-serif;
 }
 
 header {
@@ -28,11 +26,6 @@ header {
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
   text-align: center;
-  font-family: 'Futura', sans-serif;
-}
-
-p {
-  font-family: sans-serif;
 }
 
 #contact {
@@ -41,6 +34,10 @@ p {
 
 #home {
   padding-top: 20px;
+}
+
+#home .row {
+  margin-bottom: 15px;
 }
 
 #job-title {
@@ -58,12 +55,10 @@ p {
   top: -30px;
 }
 
-#nav li {
+li {
   float: left;
-  font-weight: 400;
   list-style: none;
   margin-right: 30px;
-  text-transform: capitalize;
 }
 
 #overlay {
@@ -100,14 +95,17 @@ p {
   z-index:10;
 }
 
-.project {
-  margin: 0;
-  padding: 0;
-  /*filter: grayscale(100%);*/
+.image-text {
+  position: absolute;
+  margin-top: 80px;
 }
 
-.project:hover {
-  filter: none;
+.project {
+  transition-duration: 0.5s;
+}
+
+.project.filter {
+  filter: brightness(50%);
 }
 
 .project img {
@@ -153,7 +151,7 @@ p {
     right: 0px;
     top: 0px;
     background-color:#15caac;
-    z-index: 1;
+    /*z-index: 3;*/
   }
 
   #name.fix {
@@ -166,7 +164,7 @@ p {
     left: 0;
     position: fixed;
     right: 0;
-    z-index: 2;
+    z-index: 3;
     /*float:left;*/
     width:100%;
     /*overflow:hidden;*/
@@ -192,6 +190,10 @@ p {
     padding: 0;
     position: relative;
     right: 50%;
+  }
+
+  .project.filter {
+
   }
 }
 
