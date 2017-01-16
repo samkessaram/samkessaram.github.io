@@ -28,16 +28,21 @@ header {
   text-align: center;
 }
 
+p, li {
+  font-size: 1.25rem;
+}
+
+#about {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
 #contact {
   margin-bottom: 20px;
 }
 
 #home {
   padding-top: 20px;
-}
-
-#home .row {
-  margin-bottom: 15px;
 }
 
 #job-title {
@@ -55,10 +60,35 @@ header {
   top: -30px;
 }
 
+#screenshot img{
+  margin: 40px 0;
+}
+
+ul {
+  text-align: center;
+}
+
 li {
-  float: left;
+  display: inline-block;
   list-style: none;
   margin-right: 30px;
+}
+
+#stack {
+  cursor: default;
+  margin-bottom: 3rem;
+}
+
+#stack h3 {
+  font-size: 1.25rem;
+}
+
+#stack li {
+  transition-duration: 0.5s;
+}
+
+#stack li:hover {
+  color: #1468a0;
 }
 
 #overlay {
@@ -72,10 +102,6 @@ li {
   z-index: 9;
 }
 
-#portfolio .row {
-  padding: .75rem;
-}
-
 #project-info {
   margin-top: 50px;
 }
@@ -86,7 +112,6 @@ li {
   color:#FFF;
   left:100%;
   overflow-x:hidden;
-  overflow-y:auto;
   position:absolute;
   right:0;
   transition-duration:.2s;
@@ -101,6 +126,7 @@ li {
 }
 
 .project {
+  transition-property: filter;
   transition-duration: 0.5s;
 }
 
@@ -151,7 +177,6 @@ li {
     right: 0px;
     top: 0px;
     background-color:#15caac;
-    /*z-index: 3;*/
   }
 
   #name.fix {
@@ -160,14 +185,11 @@ li {
 
   #nav {
     background-color: #15caac;
-    /*float: left;*/
     left: 0;
     position: fixed;
     right: 0;
     z-index: 3;
-    /*float:left;*/
     width:100%;
-    /*overflow:hidden;*/
     height: 50px;
   }
 
@@ -186,14 +208,10 @@ li {
     display: block;
     float: left;
     list-style: none;
-    margin: 11px 15px;
+    margin: 8px 15px;
     padding: 0;
     position: relative;
     right: 50%;
-  }
-
-  .project.filter {
-
   }
 }
 
