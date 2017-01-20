@@ -141,7 +141,7 @@ var projects = {
   todo: { 
     title: 'Chrome Todo Extension',
     description: "I built this simple&mdash;but useful&mdash;app to learn about Chrome Apps, and ended up learning a lot about Vue and IndexedDB as well. Google is actually phasing out support for Chrome Apps, but this works nicely as a regular web app.",
-    link: 'https://samkessaram.github.io/chrome-todo',
+    link: 'https://samkessaram.github.io/chrome-to-do',
     source: 'link'
   },
   fiduciary: { 
