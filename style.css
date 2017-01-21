@@ -11,11 +11,12 @@ h4,
 h5,
 h6,
 body {
-  font-family: 'Futura', 'Helvetica', sans-serif; }
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 200; }
 
 header {
   color: white;
-  background-color: #63d8a5;
+  background-color: #3D9970;
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
   text-align: center; }
@@ -150,14 +151,14 @@ li {
     left: 0px;
     right: 0px;
     top: 0px;
-    background-color: #63d8a5;
+    background-color: #3D9970;
     z-index: 2; }
 
   #name.fix {
     box-shadow: 1px 1px 10px grey; }
 
   #nav {
-    background-color: #63d8a5;
+    background-color: #3D9970;
     left: 0;
     position: fixed;
     right: 0;
