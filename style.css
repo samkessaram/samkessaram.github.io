@@ -11,12 +11,13 @@ h4,
 h5,
 h6,
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 200; }
 
 header {
   color: white;
-  background-color: #3D9970;
+  /*background-color:  $secondaryColor;*/
+  background: linear-gradient(to right, #106e9a, #39CCCC);
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
   text-align: center; }
@@ -41,10 +42,7 @@ p, li {
   font-size: 2rem; }
 
 #name {
-  font-size: 3rem;
-  /*  position: absolute;
-    left: 0px;
-    right: 0px;*/ }
+  font-size: 3rem; }
 
 #nav {
   cursor: pointer;
@@ -151,14 +149,16 @@ li {
     left: 0px;
     right: 0px;
     top: 0px;
-    background-color: #3D9970;
+    /*background-color: $secondaryColor;*/
+    background: linear-gradient(to right, #106e9a, #39CCCC);
     z-index: 2; }
 
   #name.fix {
     box-shadow: 1px 1px 10px grey; }
 
   #nav {
-    background-color: #3D9970;
+    /*background-color:  $secondaryColor;*/
+    background: linear-gradient(to right, #106e9a, #39CCCC);
     left: 0;
     position: fixed;
     right: 0;

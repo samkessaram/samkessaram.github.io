@@ -1,5 +1,5 @@
-$primaryColor: #3D9970;
-$secondaryColor: #1566ca;
+$primaryColor: #106e9a;
+$secondaryColor: #39CCCC;
 
 html {
     -webkit-text-size-adjust: none;
@@ -16,13 +16,14 @@ h4,
 h5, 
 h6, 
 body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 200;
 }
 
 header {
   color: white;
-  background-color:  $primaryColor;
+  /*background-color:  $secondaryColor;*/
+  background: linear-gradient(to right, $primaryColor, $secondaryColor);
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
   text-align: center;
@@ -55,9 +56,6 @@ p, li {
 
 #name {
   font-size: 3rem;
-/*  position: absolute;
-  left: 0px;
-  right: 0px;*/
 }
 
 #nav {
@@ -187,7 +185,8 @@ li {
     left: 0px;
     right: 0px;
     top: 0px;
-    background-color: $primaryColor;
+    /*background-color: $secondaryColor;*/
+    background: linear-gradient(to right, $primaryColor, $secondaryColor);
     z-index: 2;
   }
 
@@ -196,7 +195,8 @@ li {
   }
 
   #nav {
-    background-color:  $primaryColor;
+    /*background-color:  $secondaryColor;*/
+    background: linear-gradient(to right, $primaryColor, $secondaryColor);
     left: 0;
     position: fixed;
     right: 0;
