@@ -15,7 +15,7 @@ body {
 
 header {
   color: white;
-  background-color: #154dca;
+  background-color: #63d8a5;
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
   text-align: center; }
@@ -150,14 +150,14 @@ li {
     left: 0px;
     right: 0px;
     top: 0px;
-    background-color: #154dca;
+    background-color: #63d8a5;
     z-index: 2; }
 
   #name.fix {
     box-shadow: 1px 1px 10px grey; }
 
   #nav {
-    background-color: #154dca;
+    background-color: #63d8a5;
     left: 0;
     position: fixed;
     right: 0;
