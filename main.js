@@ -42,14 +42,17 @@ $(function(){
   $(window).on('scroll', function(){
     fixHeader();
     setElementDimensions();
+    if ( document.documentElement.clientWidth <= 720 ){
+      $('#job-title').css('opacity', 1 - $(window).scrollTop() / 20);
+    }
   })
 
   function fixHeader(){
     if ( document.documentElement.clientWidth <= 720 ){
       if ( window.scrollY > 31 ){
-        $('header, #job-title, #name, #home').addClass('fix');
+        $('header, #job-title, #home').addClass('fix');
       } else {
-        $('header, #job-title, #name, #home').removeClass('fix');
+        $('header, #job-title, #home').removeClass('fix');
       }
     }
   }

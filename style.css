@@ -134,9 +134,10 @@ li {
 
   header.fix {
     position: fixed;
-    left: 0px;
-    right: 0px;
-    height: 30px; }
+    left: 0;
+    right: 0;
+    height: 43px;
+    box-shadow: 1px 1px 10px grey; }
 
   #home.fix {
     padding-top: 95px; }
@@ -149,12 +150,7 @@ li {
     left: 0px;
     right: 0px;
     top: 0px;
-    /*background-color: $secondaryColor;*/
-    background: linear-gradient(to right, #106e9a, #39CCCC);
     z-index: 2; }
-
-  #name.fix {
-    box-shadow: 1px 1px 10px grey; }
 
   #nav {
     /*background-color:  $secondaryColor;*/
