@@ -63,7 +63,7 @@ $(function(){
 
   $(window).on('orientationchange resize', function(){
     if ($('#project-view').css('width') !== '0px'){
-      $('#project-view').css({top: window.scrollY, height: document.documentElement.clientHeight, width: document.documentElement.clientWidth}); 
+      $('#project-view').css({top: window.scrollY, height: '100%', width: document.documentElement.clientWidth}); 
     }
     $('header').css('max-width',document.documentElement.clientWidth);
     setElementDimensions();
