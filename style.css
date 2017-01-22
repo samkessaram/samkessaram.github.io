@@ -17,7 +17,7 @@ body {
 header {
   color: white;
   /*background-color:  $secondaryColor;*/
-  background: linear-gradient(to right, #106e9a, #39CCCC);
+  background: linear-gradient(to right, #3e7e9b, #39CCCC);
   box-shadow: 1px 1px 10px gray;
   padding: 50px 0px;
   text-align: center; }
@@ -31,9 +31,6 @@ p, li {
 
 #contact {
   margin-bottom: 20px; }
-
-#home {
-  padding-top: 20px; }
 
 #info {
   padding: 100px 0; }
@@ -154,7 +151,7 @@ li {
 
   #nav {
     /*background-color:  $secondaryColor;*/
-    background: linear-gradient(to right, #106e9a, #39CCCC);
+    background: linear-gradient(to right, #3e7e9b, #39CCCC);
     left: 0;
     position: fixed;
     right: 0;
