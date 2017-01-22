@@ -44,6 +44,8 @@ $(function(){
     setElementDimensions();
     if ( document.documentElement.clientWidth <= 720 ){
       $('#job-title').css('opacity', 1 - $(window).scrollTop() / 20);
+    } else {
+      $('#job-title').css('opacity', 1);
     }
   })
 
