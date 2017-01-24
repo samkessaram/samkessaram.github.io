@@ -1,41 +1,51 @@
 $primaryColor: #3e7e9b;
 $secondaryColor: #39CCCC;
 
-html {
-    -webkit-text-size-adjust: none;
-}
-
 body {
-    display: none;
+  display: none;
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 body {
   font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 200;
 }
 
 header {
-  color: white;
-  /*background-color:  $secondaryColor;*/
   background: linear-gradient(to right, $primaryColor, $secondaryColor);
   box-shadow: 1px 1px 10px gray;
+  color: white;
   padding: 50px 0px;
   text-align: center;
 }
 
-p, li {
+html {
+  -webkit-text-size-adjust: none;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 30px;
+}
+
+p,
+li {
   font-size: 1.25rem;
 }
 
+ul {
+  text-align: center;
+}
+
 #about {
-  margin-top: 2rem;
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 #contact {
@@ -65,37 +75,6 @@ p, li {
   top: -30px;
 }
 
-#screenshot img{
-  margin: 40px 0;
-}
-
-ul {
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-  list-style: none;
-  margin-right: 30px;
-}
-
-#stack {
-  cursor: default;
-  margin-bottom: 3rem;
-}
-
-#stack h3 {
-  font-size: 1.25rem;
-}
-
-#stack li {
-  transition-duration: 0.5s;
-}
-
-#stack li:hover {
-  color: #1468a0;
-}
-
 #overlay {
   background: #000;
   display: none;
@@ -112,31 +91,43 @@ li {
 }
 
 #project-view {
+  bottom: 0;
+  color: #FFF;
   display: none;
-  bottom:0;
-  color:#FFF;
-  left:100%;
-  overflow-x:hidden;
-  position:absolute;
-  right:0;
-  transition-duration:.2s;
-  transition-property:left;
-  width:0;
-  z-index:10;
-}
-
-.image-text {
+  left: 100%;
+  overflow-x: hidden;
   position: absolute;
-  margin-top: 80px;
+  right: 0;
+  transition-duration: .2s;
+  transition-property: left;
+  width: 0;
+  z-index: 10;
 }
 
-.project {
-  transition-property: filter;
+#screenshot img {
+  margin: 40px 0;
+}
+
+#stack h3 {
+  font-size: 1.25rem;
+}
+
+#stack li {
   transition-duration: 0.5s;
 }
 
-.project.filter {
-  filter: brightness(50%);
+#stack li:hover {
+  color: #1468a0;
+}
+
+#stack {
+  cursor: default;
+  margin-bottom: 3rem;
+}
+
+.image-text {
+  margin-top: 80px;
+  position: absolute;
 }
 
 .project img {
@@ -144,73 +135,60 @@ li {
   cursor: pointer;
 }
 
-@media (max-width: 720px){
+.project {
+  transition-duration: 0.5s;
+  transition-property: filter;
+}
+
+.project.filter {
+  filter: brightness(50%);
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 0;
+    width: 100%;
+  }
+  
+  header.fix {
+    box-shadow: 1px 1px 10px grey;
+    height: 45px;
+    left: 0;
+    position: fixed;
+    right: 0;
+  }
+  
   #contact {
     margin-bottom: 100px;
   }
-
-  header {
-    padding:0;
-    width:100%;
-  }
-
-  #info {
-    padding: 0;
-  }
-
-  #job-title {
-    font-size:1rem;
-  }
-
-  #job-title.fix {
-    display: none;
-  }
-
-  header.fix {
-    position: fixed;
-    left: 0;
-    right: 0;
-    height: 45px;
-    box-shadow: 1px 1px 10px grey;
-  }
-
+  
   #home.fix {
     padding-top: 95px;
   }
-
+  
+  #info {
+    padding: 0;
+  }
+  
+  #job-title {
+    font-size: 1rem;
+  }
+  
+  #job-title.fix {
+    display: none;
+  }
+  
   #name {
-    font-size:2rem;
+    font-size: 2rem;
+    left: 0px;
     margin-bottom: 0;
     position: fixed;
-    width: 100%;
-    left: 0px;
     right: 0px;
     top: 0px;
+    width: 100%;
     z-index: 2;
   }
-
-  #nav {
-    /*background-color:  $secondaryColor;*/
-    background: linear-gradient(to right, $primaryColor, $secondaryColor);
-    left: 0;
-    position: fixed;
-    right: 0;
-    z-index: 3;
-    width:100%;
-    height: 40px;
-  }
-
-  #nav ul {
-    clear:left;
-    float:left;
-    list-style:none;
-    margin:0;
-    padding:0;
-    position:relative;
-    left:50%;
-    text-align:center;
-  }
-
+  
   #nav li {
     display: block;
     float: left;
@@ -219,5 +197,26 @@ li {
     padding: 0;
     position: relative;
     right: 50%;
+  }
+  
+  #nav ul {
+    clear: left;
+    float: left;
+    left: 50%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  #nav {
+    background: linear-gradient(to right, $primaryColor, $secondaryColor);
+    height: 40px;
+    left: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 3;
   }
 }
