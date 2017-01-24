@@ -75,10 +75,10 @@ $(function(){
 function setElementDimensions() {
   $('header, h1, #nav').css('max-width',document.documentElement.clientWidth);
   if ( document.documentElement.clientWidth <= 720 ){
-    $('#nav').css({ top: window.innerHeight + 1, "margin-top":"-40px"});
+    $('#nav').appendTo('footer');
     $('#job-title').css('padding-top', $('#name').css('height'));
   } else {
-    $('#nav').css({ top: '-30px', "margin-top":"0px"})
+    $('header .row').before($('#nav'));
     $('#job-title').css('padding-top', '0px')
   }
 }

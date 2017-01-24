@@ -53,6 +53,7 @@ ul {
   font-size: 3rem; }
 
 #nav {
+  color: white;
   cursor: pointer;
   float: right;
   position: relative;
@@ -173,10 +174,12 @@ ul {
 
   #nav {
     background: linear-gradient(to right, #3e7e9b, #39CCCC);
+    bottom: 0;
     height: 40px;
     left: 0;
     position: fixed;
     right: 0;
+    top: auto;
     width: 100%;
     z-index: 3; } }
 
