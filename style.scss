@@ -1,8 +1,10 @@
-$primaryColor: #3e7e9b;
-$secondaryColor: #39CCCC;
+$primaryColor: #0ac898;
+$secondaryColor: #0091b2;
+$headlineTextColor: #d7f0ea;
 
 body {
   display: none;
+  background-color: #d7f0ea;
 }
 
 h1,
@@ -19,7 +21,7 @@ body {
 header {
   background: linear-gradient(to right, $primaryColor, $secondaryColor);
   box-shadow: 1px 1px 10px gray;
-  color: white;
+  color: $headlineTextColor;
   padding: 50px 0px;
   text-align: center;
 }
@@ -69,7 +71,7 @@ ul {
 }
 
 #nav {
-  color: white;
+  color: $headlineTextColor;
   cursor: pointer;
   float: right;
   position: relative;
@@ -93,7 +95,7 @@ ul {
 
 #project-view {
   bottom: 0;
-  color: #FFF;
+  color: $headlineTextColor;
   display: none;
   left: 100%;
   overflow-x: hidden;

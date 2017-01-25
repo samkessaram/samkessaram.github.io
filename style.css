@@ -1,5 +1,6 @@
 body {
-  display: none; }
+  display: none;
+  background-color: #d7f0ea; }
 
 h1,
 h2,
@@ -12,9 +13,9 @@ body {
   font-weight: 200; }
 
 header {
-  background: linear-gradient(to right, #3e7e9b, #39CCCC);
+  background: linear-gradient(to right, #0ac898, #0091b2);
   box-shadow: 1px 1px 10px gray;
-  color: white;
+  color: #d7f0ea;
   padding: 50px 0px;
   text-align: center; }
 
@@ -53,7 +54,7 @@ ul {
   font-size: 3rem; }
 
 #nav {
-  color: white;
+  color: #d7f0ea;
   cursor: pointer;
   float: right;
   position: relative;
@@ -74,7 +75,7 @@ ul {
 
 #project-view {
   bottom: 0;
-  color: #FFF;
+  color: #d7f0ea;
   display: none;
   left: 100%;
   overflow-x: hidden;
@@ -173,7 +174,7 @@ ul {
     text-align: center; }
 
   #nav {
-    background: linear-gradient(to right, #3e7e9b, #39CCCC);
+    background: linear-gradient(to right, #0ac898, #0091b2);
     bottom: 0;
     height: 40px;
     left: 0;
