@@ -68,6 +68,7 @@ $(function(){
       $('#project-view').css({top: window.scrollY, height: '100%', width: document.documentElement.clientWidth}); 
     }
     $('header').css('max-width',document.documentElement.clientWidth);
+    fixHeader();
     setElementDimensions();
   })
 });
