@@ -71,7 +71,7 @@ ul {
   z-index: 9; }
 
 #project-info {
-  margin-top: 50px; }
+  margin: 50px 0; }
 
 #project-view {
   bottom: 0;
