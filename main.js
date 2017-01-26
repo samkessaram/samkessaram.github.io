@@ -51,7 +51,7 @@ $(function(){
 
   function fixHeader(){
     if ( document.documentElement.clientWidth <= 720 ){
-      if ( window.scrollY > 31 ){
+      if ( window.scrollY > 29 ){
         $('header, #job-title, #home').addClass('fix');
       } else {
         $('header, #job-title, #home').removeClass('fix');
