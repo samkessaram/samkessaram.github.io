@@ -74,7 +74,7 @@ function setElementDimensions() {
   if ( document.documentElement.clientWidth <= 720 ){
     fixHeader();
     $('#nav').appendTo('footer');
-    $('#job-title').css('padding-top', $('#name').css('height'));
+    // $('#job-title').css('padding-top', $('#name').css('height'));
   } else {
     $('header .row').before($('#nav'));
     $('#job-title').css('padding-top', '0px')

@@ -150,29 +150,35 @@ ul {
 @media (max-width: 720px) {
   header {
     padding: 0;
+    position: fixed;
+    top: 0;
     width: 100%;
   }
   
-  header.fix {
+/*  header.fix {
     box-shadow: 1px 1px 10px grey;
     height: 44px;
     left: 0;
     position: fixed;
     right: 0;
-  }
+  }*/
   
   #contact {
     margin-bottom: 100px;
   }
   
   #home.fix {
-    padding-top: 95px;
+    /*padding-top: 95px;*/
+  }
+
+  #home {
+    padding-top: 60px;
   }
   
   #info {
     padding: 0;
-    height: 100%;
-    width: 100%;
+/*    height: 100%;
+    width: 100%;*/
 
   }
   
@@ -180,23 +186,20 @@ ul {
     font-size: 1rem;
   }
   
-  #job-title.fix {
+/*  #job-title.fix {
     display: none;
-  }
+  }*/
   
   #name {
     font-size: 2rem;
     height: 44px;
     left: 0px;
     margin-bottom: 0;
-    position: fixed;
-    right: 0px;
-    top: 0px;
+    /*position: fixed;*/
+    /*right: 0px;*/
+    /*top: 0px;*/
     width: 100%;
     z-index: 2;
-  }
-
-  #name.fix {
     background: linear-gradient(to right, $primaryColor, $secondaryColor);
   }
   
