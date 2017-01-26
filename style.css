@@ -147,7 +147,6 @@ ul {
     display: none; }
 
   #name {
-    background: linear-gradient(to right, #0ac898, #0091b2);
     font-size: 2rem;
     left: 0px;
     margin-bottom: 0;
@@ -156,6 +155,9 @@ ul {
     top: 0px;
     width: 100%;
     z-index: 2; }
+
+  #name.fix {
+    background: linear-gradient(to right, #0ac898, #0091b2); }
 
   #nav li {
     display: block;

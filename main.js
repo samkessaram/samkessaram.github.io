@@ -63,9 +63,9 @@ $(function(){
 
 function fixHeader(){
   if ( window.scrollY > 27 ){
-    $('header, #job-title, #home').addClass('fix');
+    $('header, #job-title, #home, #name').addClass('fix');
   } else {
-    $('header, #job-title, #home').removeClass('fix');
+    $('header, #job-title, #home, #name').removeClass('fix');
   }
 }
 
