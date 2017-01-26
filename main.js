@@ -41,7 +41,7 @@ $(function(){
     setElementDimensions();
     if ( document.documentElement.clientWidth <= 720 ){
       fixHeader();
-      $('#job-title').css('opacity', 1 - $(window).scrollTop() / 20);
+      $('#job-title').css('opacity', 1 - $(window).scrollTop() / 25);
     } else {
       $('#job-title').css('opacity', 1);
     }
