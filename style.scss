@@ -171,6 +171,9 @@ ul {
   
   #info {
     padding: 0;
+    height: 100%;
+    width: 100%;
+
   }
   
   #job-title {
@@ -182,6 +185,7 @@ ul {
   }
   
   #name {
+    background: linear-gradient(to right, $primaryColor, $secondaryColor);
     font-size: 2rem;
     left: 0px;
     margin-bottom: 0;
