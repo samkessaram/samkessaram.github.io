@@ -155,20 +155,8 @@ ul {
     width: 100%;
   }
   
-/*  header.fix {
-    box-shadow: 1px 1px 10px grey;
-    height: 44px;
-    left: 0;
-    position: fixed;
-    right: 0;
-  }*/
-  
   #contact {
     margin-bottom: 100px;
-  }
-  
-  #home.fix {
-    /*padding-top: 95px;*/
   }
 
   #home {
@@ -177,9 +165,6 @@ ul {
   
   #info {
     padding: 0;
-/*    height: 100%;
-    width: 100%;*/
-
   }
   
   #job-title {
@@ -187,7 +172,7 @@ ul {
     position: relative;
   }
   
-  #job-title.fix {
+  #job-title.hide {
     display: none;
   }
   
@@ -196,12 +181,8 @@ ul {
     height: 44px;
     left: 0px;
     margin-bottom: 0;
-    /*position: fixed;*/
-    /*right: 0px;*/
-    /*top: 0px;*/
     width: 100%;
     z-index: 2;
-    /*background: linear-gradient(to right, $primaryColor, $secondaryColor);*/
   }
   
   #nav li {
