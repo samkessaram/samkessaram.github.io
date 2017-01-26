@@ -41,7 +41,7 @@ $(function(){
     setElementDimensions();
     if ( document.documentElement.clientWidth <= 720 ){
       fixHeader();
-      $('#job-title').css('opacity', 1 - $(window).scrollTop() / 10);
+      $('#job-title').css({opacity: 1 - window.scrollY / 10, height: 22 - window.scrollY, top: 0 - window.scrollY, marginBottom: Math.max(0, 8  - window.scrollY) });
     } else {
       $('#job-title').css('opacity', 1);
     }
@@ -62,7 +62,7 @@ $(function(){
 });
 
 function fixHeader(){
-  if ( window.scrollY > 27 ){
+  if ( window.scrollY > 25 ){
     $('header, #job-title, #home, #name').addClass('fix');
   } else {
     $('header, #job-title, #home, #name').removeClass('fix');

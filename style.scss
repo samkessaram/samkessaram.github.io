@@ -184,11 +184,12 @@ ul {
   
   #job-title {
     font-size: 1rem;
+    position: relative;
   }
   
-/*  #job-title.fix {
+  #job-title.fix {
     display: none;
-  }*/
+  }
   
   #name {
     font-size: 2rem;
@@ -200,7 +201,7 @@ ul {
     /*top: 0px;*/
     width: 100%;
     z-index: 2;
-    background: linear-gradient(to right, $primaryColor, $secondaryColor);
+    /*background: linear-gradient(to right, $primaryColor, $secondaryColor);*/
   }
   
   #nav li {
