@@ -41,9 +41,13 @@ $(function(){
     setElementDimensions();
     if ( document.documentElement.clientWidth <= 720 ){
       hideJobTitle();
-      $('#job-title').css({opacity: 1 - window.scrollY / 10, height: 22 - window.scrollY, top: Math.max(-22,0 - window.scrollY), marginBottom: Math.max(0, 8  - window.scrollY) });
+      $('#job-title').css({opacity: 1 - window.scrollY / 10, height: 22 - window.scrollY, top: Math.max(-22, 0 - window.scrollY), marginBottom: Math.max(0, 8  - window.scrollY) });
     } else {
       $('#job-title').css('opacity', 1);
+    }
+
+    if ( window.scrollY < 0 ){
+      window.scrollTo(0,0)
     }
   })
 
