@@ -75,6 +75,7 @@ function setElementDimensions() {
   if ( document.documentElement.clientWidth <= 720 ){
     hideJobTitle();
     $('#nav').appendTo('footer');
+    $('#nav').css('top', document.documentElement.clientHeight - 40)
   } else {
     $('header .row').before($('#nav'));
     $('#job-title').css('padding-top', '0px')
