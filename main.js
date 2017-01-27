@@ -41,7 +41,7 @@ $(function(){
     setElementDimensions();
     if ( document.documentElement.clientWidth <= 720 ){
       hideJobTitle();
-      $('#job-title').css({opacity: 1 - window.scrollY / 10, height: 22 - window.scrollY, top: Math.max(-22, 0 - window.scrollY), marginBottom: Math.max(0, 8  - window.scrollY) });
+      $('#job-title').css({opacity: 1 - window.scrollY / 10, height: 22 - window.scrollY, top: Math.max(-22, Math.min(0,0 - window.scrollY)), marginBottom: Math.max(0, 8  - window.scrollY) });
     } else {
       $('#job-title').css('opacity', 1);
     }
@@ -70,6 +70,7 @@ function hideJobTitle(){
 }
 
 function setElementDimensions() {
+  $('html').css('max-height', document.body.clientHeight)
   $('header, h1, #nav').css('max-width',document.documentElement.clientWidth);
   if ( document.documentElement.clientWidth <= 720 ){
     hideJobTitle();
