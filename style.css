@@ -125,6 +125,11 @@ ul {
     width: 100%;
     max-height: 74px; }
 
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%; }
+
   #contact {
     margin-bottom: 100px; }
 
@@ -173,7 +178,7 @@ ul {
     bottom: 0;
     height: 40px;
     left: 0;
-    position: fixed;
+    position: absolute;
     right: 0;
     top: auto;
     width: 100%;

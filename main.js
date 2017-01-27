@@ -45,6 +45,7 @@ $(function(){
     } else {
       $('#job-title').css('opacity', 1);
     }
+    console.log($('#nav').css('top'))
   })
 
   $('#project-view').click(function(){
