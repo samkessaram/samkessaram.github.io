@@ -20,7 +20,8 @@ header {
   text-align: center; }
 
 html {
-  -webkit-text-size-adjust: none; }
+  -webkit-text-size-adjust: none;
+  -webkit-overflow-scrolling: auto; }
 
 li {
   display: inline-block;

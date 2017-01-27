@@ -45,10 +45,6 @@ $(function(){
     } else {
       $('#job-title').css('opacity', 1);
     }
-
-    if ( window.scrollY < 0 ){
-      window.scrollTo(0,0)
-    }
   })
 
   $('#project-view').click(function(){
