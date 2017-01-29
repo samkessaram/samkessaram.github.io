@@ -22,6 +22,10 @@ header {
 html {
   -webkit-text-size-adjust: none; }
 
+#nav p {
+  display: inline-block;
+  margin: 3px 15px; }
+
 li {
   display: inline-block;
   list-style: none;
@@ -58,7 +62,8 @@ ul {
   cursor: pointer;
   float: right;
   position: relative;
-  top: -30px; }
+  top: -30px;
+  text-align: center; }
 
 #overlay {
   background: #000;
