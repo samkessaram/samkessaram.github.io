@@ -164,14 +164,8 @@ ul {
     right: 50%; }
 
   #nav ul {
-    clear: left;
-    float: left;
-    left: 50%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
     position: relative;
-    text-align: center; }
+    left: 50%; }
 
   #nav {
     background: linear-gradient(to right, #0ac898, #0091b2);
