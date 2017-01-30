@@ -3,8 +3,8 @@ $secondaryColor: #0091b2;
 $headlineTextColor: #d7f0ea;
 
 body {
-  display: none;
   background-color: #d7f0ea;
+  display: none;
 }
 
 h1,
@@ -28,7 +28,6 @@ header {
 
 html {
   -webkit-text-size-adjust: none;
-
 }
 
 li {
@@ -91,7 +90,7 @@ ul {
 }
 
 #project-info {
-  margin: 50px 0;
+  margin-top: 50px;
 }
 
 #project-view {
@@ -149,24 +148,24 @@ ul {
 }
 
 @media (max-width: 720px) {
+  footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  
   header {
+    max-height: 74px;
     padding: 0;
     position: fixed;
     top: 0;
     width: 100%;
-    max-height: 74px;
-  }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%
   }
   
   #contact {
     margin-bottom: 100px;
   }
-
+  
   #home {
     padding-top: 60px;
   }
@@ -222,8 +221,8 @@ ul {
     position: absolute;
     right: 0;
     top: auto;
+    user-select: none;
     width: 100%;
     z-index: 3;
-    user-select:none;
   }
 }
