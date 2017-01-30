@@ -130,6 +130,9 @@ ul {
     top: 0;
     width: 100%; }
 
+  h3 {
+    font-size: 1.5rem; }
+
   #contact {
     margin-bottom: 100px; }
 
