@@ -150,7 +150,7 @@ var projects = {
   fiduciary: { 
     title: 'Fiduciary Realty',
     description: "I was tasked with revamping this real estate agency's website and bringing it up to modern standards. What was once a series of pages full of jargon, with a presentation dating it firmly in the early 1990s, I condensed into a single polished and informative page.",
-    link: 'http://fiduciaryrealty.com',
+    link: 'https://samkessaram.github.io/fiduciaryrealty/',
     source: 'link'
   }
 }
