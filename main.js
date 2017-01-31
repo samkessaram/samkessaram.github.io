@@ -110,7 +110,7 @@ function inputProjectInfo(target){
   $('#screenshot').html($(target).html())
   $('#project-title').html(project.title);
   $('#project-description').html(project.description);
-  $('#project-link').attr('href',project.link);
+  $('.project-link').attr('href',project.link);
   $('#project-source').attr('href',project.source);
 }
 
