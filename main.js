@@ -121,37 +121,43 @@ var projects = {
     title: 'Local Weather',
     description: "This is an app I developed while working through the freeCodeCamp curriculum. It simply determines your location and dynamically changes the information, background, and icon according to the conditions fetched from Weather Underground.",
     link: 'https://samkessaram.github.io/local_weather',
-    source:'link'
+    source:'https://github.com/samkessaram/local_weather'
   },
   routefinder: { 
     title: 'Route Finder',
     description: "I developed this with some classmates at Lighthouse Labs in Toronto in the fall of 2015. Given the user's location and destination, we would use the Google Maps API and NextBus to determine the most efficient method of transportation. I built the routing algorithm with Ruby on the backend, and helped to style and refine the UI of the app.",
     link: 'http://ttcroutefinder.herokuapp.com/#/',
-    source: 'link'
+    source: 'https://github.com/macu123/WalkThisWay'
   }, 
   wikipedia: { 
     title: 'Wikipedia Viewer',
     description: "This was an assignment from freeCodeCamp. A user enters a search term, and using the MediaWiki API the app fetches 10 relevant articles. It's a lot prettier than Wikipedia, but I wanted to keep a minimalist aesthetic to keep with the brand.",
     link: 'https://samkessaram.github.io/wikipedia_viewer',
-    source: 'link'
+    source: 'https://github.com/samkessaram/wikipedia_viewer'
   }, 
   quotes: { 
     title: 'Random Quote Machine',
     description: "Another freeCodeCamp project, this fetches quotes from an API, displays them, and allowing the user to tweet them from their account.",
     link: 'https://samkessaram.github.io/random_quote_machine',
-    source: 'link'
+    source: 'https://github.com/samkessaram/random_quote_machine'
   }, 
   todo: { 
     title: 'Chrome Todo Extension',
     description: "I built this simple&mdash;but useful&mdash;app to learn about Chrome Apps, and ended up learning a lot about Vue and IndexedDB as well. Google is actually phasing out support for Chrome Apps, but this works nicely as a regular web app.",
     link: 'https://samkessaram.github.io/chrome-to-do',
-    source: 'link'
+    source: 'https://github.com/samkessaram/chrome-to-do'
   },
   fiduciary: { 
     title: 'Fiduciary Realty',
     description: "I was tasked with revamping this real estate agency's website and bringing it up to modern standards. What was once a series of pages full of jargon, with a presentation dating it firmly in the early 1990s, I condensed into a single polished and informative page.",
     link: 'http://fiduciaryrealty.com/',
-    source: 'link'
+    source: 'https://github.com/samkessaram/fiduciaryrealty'
+  },
+  ohsnap: { 
+    title: 'Oh Snap! (restaurant review aggregator)',
+    description: "I created this Rails app to aggregate reviews for restaurants in Toronto, allowing users to easily view reviews from multiple reviewing sites at once.",
+    link: 'http://oh-snap.herokuapp.com/',
+    source: 'https://github.com/samkessaram/review_aggregator'
   }
 }
 
