@@ -126,7 +126,7 @@ var projects = {
   routefinder: { 
     title: 'Route Finder',
     description: "I developed this with some classmates at Lighthouse Labs in Toronto in the fall of 2015. Given the user's location and destination, we would use the Google Maps API and NextBus to determine the most efficient method of transportation. I built the routing algorithm with Ruby on the backend, and helped to style and refine the UI of the app.",
-    link: 'https://blooming-castle-2022.herokuapp.com',
+    link: 'http://ttcroutefinder.herokuapp.com/#/',
     source: 'link'
   }, 
   wikipedia: { 
@@ -150,7 +150,7 @@ var projects = {
   fiduciary: { 
     title: 'Fiduciary Realty',
     description: "I was tasked with revamping this real estate agency's website and bringing it up to modern standards. What was once a series of pages full of jargon, with a presentation dating it firmly in the early 1990s, I condensed into a single polished and informative page.",
-    link: 'https://samkessaram.github.io/fiduciaryrealty/',
+    link: 'http://fiduciaryrealty.com/',
     source: 'link'
   }
 }
