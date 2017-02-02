@@ -61,8 +61,7 @@ $(function(){
 });
 
 function hideJobTitle(){
-  console.log('hide')
-  if ( window.scrollY > 25 ){
+  if ( window.scrollY > 25 && document.documentElement.clientWidth <= 720){
     $('#job-title').addClass('hide');
   } else {
     $('#job-title').removeClass('hide');

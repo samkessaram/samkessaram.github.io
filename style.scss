@@ -1,20 +1,23 @@
-$primaryColor: #0ac898;
-$secondaryColor: #0091b2;
-$headlineTextColor: #d7f0ea;
+$primaryColor: #3c3c3c;
+$secondaryColor: #1d1d1d;
+$headlineTextColor: white;
 
 body {
-  background-color: #d7f0ea;
+  background-color: #f3f3f3;
   display: none;
 }
 
 h1,
-h2,
+h2, {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 100;
+}
+
 h3,
 h4,
 h5,
 h6,
 body {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 200;
 }
 
@@ -64,10 +67,12 @@ ul {
 
 #job-title {
   font-size: 2rem;
+  /*font-weight: 100;*/
 }
 
 #name {
   font-size: 3rem;
+  /*font-weight: 100;*/
 }
 
 #nav {
@@ -76,6 +81,7 @@ ul {
   float: right;
   position: relative;
   top: -30px;
+  font-weight: 100;
 }
 
 #overlay {
