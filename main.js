@@ -57,6 +57,7 @@ $(function(){
     }
     $('header').css('max-width',document.documentElement.clientWidth);
     setElementDimensions();
+    hideJobTitle();
   })
 });
 
