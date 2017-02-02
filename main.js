@@ -158,6 +158,12 @@ var projects = {
     description: "I created this Rails app to aggregate reviews for restaurants in Toronto, allowing users to easily view reviews from multiple reviewing sites at once.",
     link: 'http://oh-snap.herokuapp.com/',
     source: 'https://github.com/samkessaram/review_aggregator'
+  },
+  css: { 
+    title: 'CSS Cleaner',
+    description: "I made this simple page for quickly and easily formatting and sorting CSS rules. This was half an exploration of JavaScript, half a passion project for having clean CSS for my projects. Written in vanilla JS, this project also got me intimately familiar with regular expressions while I was creating the parsing algorithm.",
+    link: 'https://samkessaram.github.io/css_cleaner',
+    source: 'https://github.com/samkessaram/css_cleaner'
   }
 }
 
