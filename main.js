@@ -56,12 +56,12 @@ $(function(){
       $('#project-view').css({top: window.scrollY, height: '100%', width: document.documentElement.clientWidth}); 
     }
     $('header').css('max-width',document.documentElement.clientWidth);
-    hideJobTitle();
     setElementDimensions();
   })
 });
 
 function hideJobTitle(){
+  console.log('hide')
   if ( window.scrollY > 25 ){
     $('#job-title').addClass('hide');
   } else {

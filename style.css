@@ -146,9 +146,6 @@ ul {
     font-size: 1rem;
     position: relative; }
 
-  #job-title.hide {
-    display: none; }
-
   #name {
     font-size: 2rem;
     height: 44px;
