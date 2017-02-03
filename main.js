@@ -17,7 +17,8 @@ $(function(){
     if ( document.documentElement.clientWidth > 720 ){
       $('.project').not(this).addClass('filter')
       var text = projects[this.id]['title']
-      $(this).children().after('<p class="hover-text" style="position:relative;top:-90px;margin-bottom:-' + $('p').css('line-height') + ';background-color: rgba(0, 0, 0, 0.58);color: white;">' + text + '</p>')
+      var height = $(this).css('height').split('px')[0]
+      $(this).children().after('<p class="hover-text" style="position:relative;top:-' + height/1.66 + 'px;margin-bottom:-' + $('p').css('line-height') + ';background-color: rgba(0, 0, 0, 0.58);color: white;">' + text + '</p>')
     }
   })
 
