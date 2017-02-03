@@ -18,7 +18,7 @@ $(function(){
       $('.project').not(this).addClass('filter')
       var text = projects[this.id]['title']
       var height = $(this).css('height').split('px')[0]
-      $(this).children().after('<p class="hover-text" style="position:relative;top:-' + height/1.66 + 'px;margin-bottom:-' + $('p').css('line-height') + ';background-color: rgba(0, 0, 0, 0.58);color: white;">' + text + '</p>')
+      $(this).children().after('<p class="hover-text" style="cursor:pointer;position:relative;top:-' + height/1.66 + 'px;margin-bottom:-' + $('p').css('line-height') + ';background-color: rgba(0, 0, 0, 0.58);color: white;">' + text + '</p>')
     }
   })
 
