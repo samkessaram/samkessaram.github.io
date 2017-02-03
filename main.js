@@ -16,11 +16,14 @@ $(function(){
   $('.project').mouseenter(function(){
     if ( document.documentElement.clientWidth > 720 ){
       $('.project').not(this).addClass('filter')
+      var text = projects[this.id]['title']
+      $(this).children().after('<p class="hover-text" style="position:relative;top:-90px;margin-bottom:-' + $('p').css('line-height') + ';background-color: rgba(0, 0, 0, 0.58);color: white;">' + text + '</p>')
     }
   })
 
   $('.project').mouseleave(function(){
     $('.project').removeClass('filter')
+    $('.project p').remove()
   })
 
   $('#nav li').click(function(){
@@ -106,7 +109,7 @@ function hideProject(){
 
 function inputProjectInfo(target){
   $('#project-view').css('display','block');
-  project = projects[target.id];
+  var project = projects[target.id];
   $('#screenshot').html($(target).html())
   $('#project-title').html(project.title);
   $('#project-description').html(project.description);
@@ -154,7 +157,7 @@ var projects = {
     source: 'https://github.com/samkessaram/fiduciaryrealty'
   },
   ohsnap: { 
-    title: 'Oh Snap! (restaurant review aggregator)',
+    title: 'Review Aggregator',
     description: "I created this Rails app to aggregate reviews for restaurants in Toronto, allowing users to easily view reviews from multiple reviewing sites at once.",
     link: 'http://oh-snap.herokuapp.com/',
     source: 'https://github.com/samkessaram/review_aggregator'
