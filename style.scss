@@ -144,9 +144,15 @@ ul {
   cursor: pointer;
 }
 
+#projects {
+  margin: 0 0 40px 0;
+}
+
 .project {
   transition-duration: 0.5s;
   transition-property: filter;
+  margin: 0;
+  padding: 0;
 }
 
 .project.filter {
