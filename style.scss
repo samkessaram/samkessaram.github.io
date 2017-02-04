@@ -93,6 +93,10 @@ ul {
   z-index: 9;
 }
 
+#projects {
+  box-shadow: 1px 1px 5px lightgrey;
+}
+
 #project-info {
   margin-top: 50px;
 }
@@ -138,7 +142,6 @@ ul {
 }
 
 .project img {
-  box-shadow: 1px 1px 5px lightgrey;
   cursor: pointer;
 }
 
