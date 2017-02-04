@@ -19,14 +19,13 @@
   ga('create', 'UA-91420212-1', 'auto');
   ga('send', 'pageview');
   document.addEventListener('DOMContentLoaded',function(){
-    console.log('loaded')
-    document.getElementById('projects').addEventListener('click',function(){
-      console.log('project click')
-      ga('send','event','projects','click')
-    })
+    var projects = document.getElementByClassName('project');
+    for ( var i = 0; i < projects.length; i++){
+      projects[i].addEventListener('click',function(){
+        ga('send','event','click',this.id)
+      })
+    }
   })
-  
-
 </script>
 <div class="container">
 
