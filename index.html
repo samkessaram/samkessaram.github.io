@@ -20,7 +20,7 @@
   ga('send', 'pageview');
   document.addEventListener('DOMContentLoaded',function(){
     console.log('loaded')
-    document.getElementById('projects').click(function(){
+    document.getElementById('projects').addEventListener('click',function(){
       console.log('project click')
       ga('send','event','projects','click')
     })
