@@ -22,7 +22,7 @@
     var projects = document.getElementsByClassName('project');
     for ( var i = 0; i < projects.length; i++){
       projects[i].addEventListener('click',function(){
-        ga('send','event','click',this.id)
+        ga('send','event', this.id, 'click')
       })
     }
   })
