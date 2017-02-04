@@ -111,7 +111,7 @@ function hideProject(){
 function inputProjectInfo(target){
   $('#project-view').css('display','block');
   var project = projects[target.id];
-  $('#screenshot').html($(target).html())
+  $('#screenshot').html($(target).html().split('<p')[0])
   $('#project-title').html(project.title);
   $('#project-description').html(project.description);
   $('.project-link').attr('href',project.link);
