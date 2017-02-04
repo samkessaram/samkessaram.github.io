@@ -29,16 +29,16 @@
     var liveLink = document.getElementsByClassName('project-link')
     for ( var i = 0; i < liveLink.length; i++){
       liveLink[i].addEventListener('click',function(){
-        ga('send','event','live project','click')
+        ga('send','event',this.getAttribute('href'),'click')
       })
     }
 
     document.getElementById('gitHub').addEventListener('click',function(){
-      ga('send','event','github','click')
+      ga('send','event','github profile','click')
     })
 
     document.getElementById('project-source').addEventListener('click',function(){
-      ga('send','event','project-source','click')
+      ga('send','event',this.getAttribute('href'),'click')
     })
 
   })
