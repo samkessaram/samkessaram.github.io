@@ -25,6 +25,22 @@
         ga('send','event', this.id, 'click')
       })
     }
+
+    var liveLink = document.getElementsByClassName('project-link')
+    for ( var i = 0; i < liveLink.length; i++){
+      liveLink[i].addEventListener('click',function(){
+        ga('send','event','live project','click')
+      })
+    }
+
+    document.getElementById('gitHub').addEventListener('click',function(){
+      ga('send','event','github','click')
+    })
+
+    document.getElementById('project-source').addEventListener('click',function(){
+      ga('send','event','project-source','click')
+    })
+
   })
 </script>
 <div class="container">
@@ -87,7 +103,7 @@
       <div class="row">
         <div class="small-10 small-centered columns">
         <h3>contact</h3>
-        <p>I'd love to hear from you. Shoot me an <a href="mailto:samkessaram@gmail.com?subject=Come work for me!" target="_blank">e-mail</a>, or check out my code on <a href="https://github.com/samkessaram" target="_blank">GitHub</a>.</p>
+        <p>I'd love to hear from you. Shoot me an <a href="mailto:samkessaram@gmail.com?subject=Come work for me!" target="_blank">e-mail</a>, or check out my code on <a id="gitHub" href="https://github.com/samkessaram" target="_blank">GitHub</a>.</p>
         </div>
       </div>
     </div>
