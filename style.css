@@ -4,7 +4,6 @@ body {
 
 h1,
 h2 {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
   font-weight: 100; }
 
 h3,
@@ -12,7 +11,7 @@ h4,
 h5,
 h6,
 body {
-  font-weight: 200; }
+  font-weight: 300; }
 
 header {
   background: linear-gradient(to right, #3c3c3c, #1d1d1d);
