@@ -16,7 +16,8 @@ $(function(){
   $('#screenshot').mouseenter(function(){
     var height = $('#screenshot img').css('height').split('px')[0]/2
     var lineHeight = $('p').css('line-height').split('px')[0]
-    height = parseInt(height) + 2 * parseInt(lineHeight)
+    height = parseInt(height) + 1.3 *  parseInt(lineHeight)
+    console.log(lineHeight)
     $(this).addClass('filter');
     $(this).children().after('<p class="hover-text" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.58);top:-' + height + 'px;position:relative;margin-bottom:-' + lineHeight + 'px;">View live project</p>')
   })
