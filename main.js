@@ -13,6 +13,19 @@ $(function(){
       },500);
   })
 
+  $('#screenshot').mouseenter(function(){
+    var height = $('#screenshot img').css('height').split('px')[0]/2
+    var lineHeight = $('p').css('line-height').split('px')[0]
+    height = parseInt(height) + 2 * parseInt(lineHeight)
+    $(this).addClass('filter');
+    $(this).children().after('<p class="hover-text" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.58);top:-' + height + 'px;position:relative;margin-bottom:-' + lineHeight + 'px;">View live project</p>')
+  })
+
+  $('#screenshot').mouseleave(function(){
+    $(this).removeClass('filter');
+    $('#screenshot p').remove();
+  })
+
   $('.project').mouseenter(function(){
     if ( document.documentElement.clientWidth > 720 ){
       $('.project').not(this).addClass('filter')
