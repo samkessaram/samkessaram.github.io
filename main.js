@@ -19,7 +19,7 @@ $(function(){
     height = parseInt(height) + 1.3 *  parseInt(lineHeight)
     console.log(lineHeight)
     $(this).addClass('filter');
-    $(this).children().after('<p class="hover-text" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.58);top:-' + height + 'px;position:relative;margin-bottom:-' + lineHeight + 'px;">View live project</p>')
+    $(this).children().after('<p class="hover-text" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.58);top:-' + height + 'px;position:relative;margin-bottom:-' + lineHeight + 'px;">View it live</p>')
   })
 
   $('#screenshot').mouseleave(function(){
