@@ -10,39 +10,37 @@
 <meta name="viewport" content="width=device-width initial-scale=1.0, user-scalable=yes">
 
 <div id="overlay"></div>
+<!-- Google Analytics -->
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-91420212-1', 'auto');
-  ga('send', 'pageview');
-  document.addEventListener('DOMContentLoaded',function(){
-    var projects = document.getElementsByClassName('project');
-    for ( var i = 0; i < projects.length; i++){
-      projects[i].addEventListener('click',function(){
-        ga('send','event', this.id, 'click')
-      })
-    }
-
-    var liveLink = document.getElementsByClassName('project-link')
-    for ( var i = 0; i < liveLink.length; i++){
-      liveLink[i].addEventListener('click',function(){
-        ga('send','event',this.getAttribute('href'),'click')
-      })
-    }
-
-    document.getElementById('gitHub').addEventListener('click',function(){
-      ga('send','event','github profile','click')
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+document.addEventListener('DOMContentLoaded',function(){
+  var projects = document.getElementsByClassName('project');
+  for ( var i = 0; i < projects.length; i++){
+    projects[i].addEventListener('click',function(){
+      ga('send','event', this.id, 'click')
     })
+  }
 
-    document.getElementById('project-source').addEventListener('click',function(){
+  var liveLink = document.getElementsByClassName('project-link')
+  for ( var i = 0; i < liveLink.length; i++){
+    liveLink[i].addEventListener('click',function(){
       ga('send','event',this.getAttribute('href'),'click')
     })
+  }
 
+  document.getElementById('gitHub').addEventListener('click',function(){
+    ga('send','event','github profile','click')
   })
+
+  document.getElementById('project-source').addEventListener('click',function(){
+    ga('send','event',this.getAttribute('href'),'click')
+  })
+})
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!-- End Google Analytics -->
 <div class="container">
 
   <header>
