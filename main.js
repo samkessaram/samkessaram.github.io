@@ -1,6 +1,6 @@
 $(function(){
   $('body').show();
-  setElementDimensions();
+  setStyles();
 
   $('.project').click(function(){
     inputProjectInfo(this);
@@ -17,7 +17,6 @@ $(function(){
     var height = $('#screenshot img').css('height').split('px')[0]/2
     var lineHeight = $('p').css('line-height').split('px')[0]
     height = parseInt(height) + 1.3 *  parseInt(lineHeight)
-    console.log(lineHeight)
     $(this).addClass('filter');
     $(this).children().after('<p class="hover-text" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.58);top:-' + height + 'px;position:relative;margin-bottom:-' + lineHeight + 'px;">View it live</p>')
   })
@@ -56,13 +55,7 @@ $(function(){
   })
 
   $(window).on('scroll', function(){
-    setElementDimensions();
-    if ( document.documentElement.clientWidth <= 720 ){
-      hideJobTitle();
-      $('#job-title').css({opacity: 1 - window.scrollY / 10, height: 22 - window.scrollY, top: Math.max(-22, Math.min(0,0 - window.scrollY)), marginBottom: Math.max(0, 8  - window.scrollY) });
-    } else {
-      $('#job-title').css('opacity', 1);
-    }
+    setStyles();
   })
 
   $('#project-view').click(function(){
@@ -73,29 +66,33 @@ $(function(){
     if ($('#project-view').css('width') !== '0px'){
       $('#project-view').css({top: window.scrollY, height: '100%', width: document.documentElement.clientWidth}); 
     }
-    $('header').css('max-width',document.documentElement.clientWidth);
-    setElementDimensions();
-    hideJobTitle();
+    setStyles();
   })
 });
 
-function hideJobTitle(){
-  if ( window.scrollY > 25 && document.documentElement.clientWidth <= 720){
-    $('#job-title').addClass('hide');
+function fadeJobTitle(){
+  $('#job-title').css({opacity: 1 - window.scrollY / 10, height: 22 - window.scrollY, top: Math.max(-22, Math.min(0,0 - window.scrollY)), marginBottom: Math.max(0, 8  - window.scrollY) });
+}
+
+function enlargeName(){
+  if ( window.scrollY > 25 ){
+    $('#name').addClass('big');
   } else {
-    $('#job-title').removeClass('hide');
+  $('#name').removeClass('big');
   }
 }
 
-function setElementDimensions() {
+function setStyles() {
   $('html').css('max-height', document.body.clientHeight)
   $('header, h1, #nav').css('max-width',document.documentElement.clientWidth);
   if ( document.documentElement.clientWidth <= 720 ){
-    hideJobTitle();
     $('#nav').appendTo('footer');
+    fadeJobTitle();
+    enlargeName();
   } else {
     $('header .row').before($('#nav'));
-    $('#job-title').css('padding-top', '0px')
+    $('#job-title').removeAttr('style')
+    $('#name').removeClass('big');
   }
 }
 

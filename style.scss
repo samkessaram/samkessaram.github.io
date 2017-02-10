@@ -1,29 +1,25 @@
-$primaryColor: #3c3c3c;
-$secondaryColor: #1d1d1d;
-$headlineTextColor: white;
+$primaryGradient: #3c3c3c;
+$secondaryGradient: #1d1d1d;
+$mainColor: #f3f3f3;
 
 body {
-  background-color: #f3f3f3;
+  background-color: $mainColor;
   display: none;
 }
 
 h1,
-h2, {
-  font-weight: 100;
-}
-
+h2,
 h3,
 h4,
 h5,
 h6,
 body {
-  font-weight: 300;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 header {
-  background: linear-gradient(to right, $primaryColor, $secondaryColor);
+  background-color: #f3f3f3;
   box-shadow: 1px 1px 10px gray;
-  color: $headlineTextColor;
   padding: 50px 0px;
   text-align: center;
 }
@@ -65,20 +61,27 @@ ul {
 
 #job-title {
   font-size: 2rem;
+      text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #name {
-  font-size: 3rem;
+  font-size: 6rem;
+  transition-duration: 0.2s;
+  letter-spacing: 0.114943rem;
+  font-weight: 100;
 }
 
 #nav {
-  color: $headlineTextColor;
   cursor: pointer;
   float: right;
   position: relative;
   top: -30px;
-  font-weight: 100;
-  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  background-color: #f3f3f3;
 }
 
 #overlay {
@@ -102,7 +105,7 @@ ul {
 
 #project-view {
   bottom: 0;
-  color: $headlineTextColor;
+  color: $mainColor;
   display: none;
   left: 100%;
   overflow-x: hidden;
@@ -167,6 +170,8 @@ ul {
   }
   
   header {
+    background: linear-gradient(to right, $primaryGradient, $secondaryGradient);
+    color: $mainColor;
     max-height: 74px;
     padding: 0;
     position: fixed;
@@ -188,6 +193,7 @@ ul {
   
   #info {
     padding: 0;
+    width: 100%;
   }
   
   #job-title {
@@ -197,22 +203,25 @@ ul {
   
   #name {
     font-size: 2rem;
-    height: 44px;
+    /*height: 44px;*/
     left: 0px;
     margin-bottom: 0;
     width: 100%;
     z-index: 2;
+  }
+
+  #name.big {
+    font-size: 2.5rem;
   }
   
   #nav li {
     display: block;
     float: left;
     list-style: none;
-    margin: 4px 20px;
+    margin: 8px 12px;
     padding: 0;
     position: relative;
     right: 50%;
-    font-size: 1.25rem;
   }
   
   #nav ul {
@@ -227,7 +236,9 @@ ul {
   }
   
   #nav {
-    background: linear-gradient(to right, $primaryColor, $secondaryColor);
+    background: linear-gradient(to right, $primaryGradient, $secondaryGradient);
+    color: $mainColor;
+    box-shadow: 1px 1px 10px grey;
     bottom: 0;
     height: 40px;
     left: 0;
