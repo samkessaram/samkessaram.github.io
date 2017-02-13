@@ -19,7 +19,7 @@ body {
 
 header {
   background-color: #f3f3f3;
-  box-shadow: 1px 1px 10px gray;
+
   padding: 50px 0px;
   text-align: center;
 }
@@ -44,15 +44,11 @@ ul {
 
 #about {
   margin-bottom: 3rem;
-  margin-top: 2rem;
+
 }
 
 #contact {
   margin-bottom: 20px;
-}
-
-#home {
-  padding-top: 20px;
 }
 
 #info {
@@ -93,10 +89,6 @@ ul {
   top: 0px;
   width: 100%;
   z-index: 9;
-}
-
-#projects {
-  box-shadow: 1px 1px 5px lightgrey;
 }
 
 #project-info {
@@ -175,6 +167,7 @@ ul {
     max-height: 74px;
     padding: 0;
     position: fixed;
+      box-shadow: 1px 1px 10px gray;
     top: 0;
     width: 100%;
   }
@@ -183,6 +176,10 @@ ul {
     font-size: 1.5rem;
   }
   
+  #about {
+    margin-top: 2rem;
+  }
+
   #contact {
     margin-bottom: 100px;
   }
