@@ -10,37 +10,6 @@
 <meta name="viewport" content="width=device-width initial-scale=1.0, user-scalable=yes">
 
 <div id="overlay"></div>
-<!-- Google Analytics -->
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-91420212-1', 'auto');
-ga('send', 'pageview');
-document.addEventListener('DOMContentLoaded',function(){
-  var projects = document.getElementsByClassName('project');
-  for ( var i = 0; i < projects.length; i++){
-    projects[i].addEventListener('click',function(){
-      ga('send','event', this.id, 'click')
-    })
-  }
-
-  var liveLink = document.getElementsByClassName('project-link')
-  for ( var i = 0; i < liveLink.length; i++){
-    liveLink[i].addEventListener('click',function(){
-      ga('send','event',this.getAttribute('href'),'click')
-    })
-  }
-
-  document.getElementById('gitHub').addEventListener('click',function(){
-    ga('send','event','github profile','click')
-  })
-
-  document.getElementById('project-source').addEventListener('click',function(){
-    ga('send','event',this.getAttribute('href'),'click')
-  })
-})
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-<!-- End Google Analytics -->
 <div class="container">
 
   <header>
