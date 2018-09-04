@@ -1,6 +1,5 @@
 body {
-  background-color: #f3f3f3;
-  display: none; }
+  background-color: #f3f3f3; }
 
 h1,
 h2,
@@ -13,22 +12,22 @@ body {
 
 header {
   background-color: #f3f3f3;
-  padding: 50px 0px;
+  padding: 50px 0 0;
   text-align: center; }
 
 html {
   -webkit-text-size-adjust: none; }
 
+ul {
+  margin: 0; }
+
 li {
-  display: inline-block;
   list-style: none;
-  margin-right: 30px; }
+  margin-right: 30px;
+  font-size: 1.5rem; }
 
 p {
   font-size: 1.25rem; }
-
-ul {
-  text-align: center; }
 
 #about {
   margin-bottom: 3rem; }
@@ -49,78 +48,6 @@ ul {
   transition-duration: 0.2s;
   letter-spacing: 0.114943rem;
   font-weight: 100; }
-
-#nav {
-  cursor: pointer;
-  float: right;
-  position: relative;
-  top: -30px;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-size: 1rem;
-  background-color: #f3f3f3; }
-
-#overlay {
-  background: #000;
-  display: none;
-  height: 100%;
-  opacity: .9;
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 9; }
-
-#project-info {
-  margin-top: 50px; }
-
-#project-view {
-  bottom: 0;
-  color: #f3f3f3;
-  display: none;
-  left: 100%;
-  overflow-x: hidden;
-  position: absolute;
-  right: 0;
-  transition-duration: .2s;
-  transition-property: left;
-  width: 0;
-  z-index: 10; }
-
-#screenshot img {
-  margin: 40px 0; }
-
-#stack h3 {
-  font-size: 1.25rem; }
-
-#stack li {
-  transition-duration: 0.5s; }
-
-#stack li:hover {
-  color: #1468a0; }
-
-#stack {
-  cursor: default;
-  margin-bottom: 3rem; }
-
-.image-text {
-  margin-top: 80px;
-  position: absolute; }
-
-.project img {
-  cursor: pointer; }
-
-#projects {
-  margin: 0 0 40px 0; }
-
-.project {
-  transition-duration: 0.5s;
-  transition-property: filter;
-  margin: 0;
-  padding: 0; }
-
-.filter {
-  filter: brightness(50%); }
 
 @media (max-width: 720px) {
   footer {
@@ -167,39 +94,6 @@ ul {
     z-index: 2; }
 
   #name.big {
-    font-size: 2.25rem; }
-
-  #nav li {
-    display: block;
-    float: left;
-    list-style: none;
-    margin: 8px 12px;
-    padding: 0;
-    position: relative;
-    right: 50%; }
-
-  #nav ul {
-    clear: left;
-    float: left;
-    left: 50%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    text-align: center; }
-
-  #nav {
-    background: linear-gradient(to right, #3c3c3c, #1d1d1d);
-    color: #f3f3f3;
-    box-shadow: 1px 1px 10px grey;
-    bottom: 0;
-    height: 40px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: auto;
-    user-select: none;
-    width: 100%;
-    z-index: 3; } }
+    font-size: 2.25rem; } }
 
 /*# sourceMappingURL=style.css.map */
